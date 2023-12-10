@@ -793,11 +793,11 @@ ElmText_MissionFromMrPokemon:
 	line "tance called MR."
 	cont "#MON."
 
-	para "Anyway, I just got"
-	line "an e-mail from him"
+	para "I just got an"
+	line "e-mail from him"
 
-	para "saying that this"
-	line "time it's real."
+	para "raving about a"
+	line "weird discovery."
 
 	para "It is intriguing,"
 	line "but we're busy"
@@ -1191,8 +1191,8 @@ ElmGiveTicketText2:
 	para "GYM LEADERS of"
 	line "JOHTO again!"
 
-	para "This time at"
-	line "their strongest."
+	para "This time they"
+	line "won't hold back."
 
 	para "Give my regards to"
 	line "PROF.OAK in KANTO!"

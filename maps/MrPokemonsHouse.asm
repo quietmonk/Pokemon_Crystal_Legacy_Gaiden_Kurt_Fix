@@ -283,10 +283,10 @@ MrPokemonsHouse_OakText1:
 	line "errand."
 
 	para "To researchers"
-	line "like PROF.ELM and"
+	line "like PROF.ELM"
 
-	para "I, #MON are our"
-	line "friends."
+	para "and me, #MON"
+	line "are our friends."
 
 	para "He saw that you"
 	line "would treat your"
@@ -304,7 +304,7 @@ MrPokemonsHouse_OakText1:
 
 	para "See? This is the"
 	line "latest version of"
-	cont "#DEX."
+	cont "the #DEX."
 
 	para "It automatically"
 	line "records data on"

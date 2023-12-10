@@ -270,16 +270,16 @@ CatchingTutorialDebriefText:
 	text "That's how you do"
 	line "it."
 
-	para "Anyway, if you"
-	line "want to learn"
+	para "If you weaken them"
+	line "first, #MON are"
+	cont "easier to catch."
 
-	para "more about this"
-	line "region, head to"
-	
-	para "the ACADEMY in"
-	line "VIOLET CITY!"
-	
-	para "The students"
+	para "If you want to"
+	line "learn more, go"
+	cont "to the ACADEMY"
+	cont "in VIOLET CITY!"
+
+	para "The students there"
 	line "know a lot about"
 	cont "#MON."
 	done
@@ -287,16 +287,16 @@ CatchingTutorialDebriefText:
 CatchingTutorialDeclinedText:
 	text "Oh. Fine, then."
 
-	para "Anyway, if you"
-	line "want to learn"
+	para "Check every route"
+	line "to find different"
+	cont "types of #MON."
 
-	para "more about this"
-	line "region, head to"
-	
-	para "the ACADEMY in"
-	line "VIOLET CITY!"
-	
-	para "The students"
+	para "If you want to"
+	line "learn more, go"
+	cont "to the ACADEMY"
+	cont "in VIOLET CITY!"
+
+	para "The students there"
 	line "know a lot about"
 	cont "#MON."
 	done
