@@ -262,109 +262,96 @@ EarlsPokemonAcademyYoungster1Text:
 	done
 
 EarlsPokemonAcademyGameboyKid1Text:
-	text "The newly dis-"
-	line "covered DARK"
+    text "The newly dis-"
+    line "covered DARK-"
 
-	para "type deals"
-	line "physical damage."
-	
-	para "GHOST-type,"
-	line "deals special"
-	cont "damage."
-	
-	para "The move SPIKE"
-	line "CANNON, once"
-	cont "thought to be a"
-	
-	para "NORMAL-type"
-	line "move, is a"
-	cont "STEEL-type move."
-	done
+    para "type deals"
+    line "physical damage."
+
+    para "The GHOST-type"
+    line "deals special"
+    cont "damage."
+
+    para "The move SPIKE"
+    line "CANNON, once"
+    cont "thought to be a"
+
+    para "NORMAL-type move,"
+    line "is actually a"
+    cont "STEEL-type move."
+    done
 
 EarlsPokemonAcademyGameboyKid2Text:
-	text "As trainers ex-"
-	line "pand their skills,"
+    text "Many moves are now"
+    line "more accurate than"
+    cont "previously known,"
 
-	para "many moves have"
-	line "become more"
-	cont "accurate than"
-	
-	para "previously"
-	line "thought to be."
+    para "and some that were"
+    line "once thought to be"
 
-	para "Many moves which"
-	line "were once "
-	cont "considered as"
-	
-	para "underpowered have"
-	line "also seen in-"
-	cont "creases in power."
-	
-	para "Most notably,"
-	line "BUG-type has"
-	
-	para "made much progress"
-	line "in terms of"
-	cont "viability."
+    para "underpowered have"
+    line "seen increases"
+    cont "to their power."
 
-	para "FIGHTING-type"
-	line "has also improved"
-	cont "drastically"
-	
-	para "over the last"
-	line "three years."
-	done
+    para "Most notably,"
+    line "the BUG-type has"
+
+    para "become far more"
+    line "viable in battle."
+
+    para "The FIGHTING-type"
+    line "has also improved"
+    cont "dramatically"
+
+    para "over the last"
+    line "three years."
+    done
 
 EarlsPokemonAcademyYoungster2Text:
-	text "As #MON"
-	line "continue to grow,"
-	cont "as do their stats."
-	
-	para "While still rec-"
-	line "ognizable, some"
-	cont "which were once"
-	
-	para "thought to be"
-	line "non viable, have"
-	cont "seen small stat"
-	
-	para "growths between"
-	line "5-20 base points."
+    text "While still rec-"
+    line "ognizable, some"
+    cont "#MON once"
 
-	para "Also worth noting,"
-	line "ARIADOS seem to"
-	cont "have become much"
+    para "thought to be"
+    line "nonviable have"
+    cont "seen small stat"
 
-	para "faster, with a "
-	line "base stat of 80."
-	
-	para "Many #MON have"
-	line "also started to"
-	cont "learn new moves."
+    para "increases of"
+    line "5-20 base points."
 
-	para "Now, nearly all"
-	line "#MON learn"
-	cont "multiple"
+    para "ARIADOS in par-"
+    line "ticular has become"
+    cont "much faster,"
 
-	para "moves of it's type,"
-	line "via LVL up."
-	
-	para "Many also seem"
-	line "to be learning"
-	cont "moves sooner"
-	
-	para "than they once"
-	line "did."
-	
-	para "While this helps"
-	line "trainers, it may"
-	cont "also make"
-	cont "opponents"
-	
-	para "stronger due to"
-	line "having better type"
-	cont "coverage."
-	done
+    para "with a new base"
+    line "SPEED stat of 80."
+
+    para "Many #MON can"
+    line "learn moves they"
+    cont "couldn't before."
+
+    para "Nearly every #-"
+    line "MON now learns"
+    cont "multiple moves"
+
+    para "of its own type"
+    line "via level-up."
+
+    para "Many can now also"
+    line "learn moves sooner"
+
+    para "than they could"
+    line "before."
+
+    para "Be aware that your"
+    line "opponents now use"
+    cont "teams with better"
+    cont "type coverage,"
+
+    para "so expect a much"
+    line "more challenging"
+    cont "journey ahead."
+    done
 
 AcademyBlackboardText:
 	text "The blackboard"

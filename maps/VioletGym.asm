@@ -327,7 +327,7 @@ VioletGymGuideText:
 	line "MUD-SLAP!"
 	
 	para "If you want more"
-	line "help, check out"
+	line "help, go visit the"
 	cont "#MON ACADEMY."
 	
 	para "The students there"
