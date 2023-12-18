@@ -406,10 +406,10 @@ GoldenrodGymGuideText:
 
 	para "That little teddy"
 	line "bear of hers might"
-	line "be adorable,"
+	cont "be adorable,"
 	
 	para "but I've seen it"
-	cont "slice up rocks."
+	line "slice up rocks."
 	
 	para "Check ROUTE 34 to"
 	line "catch a FIGHTING-"

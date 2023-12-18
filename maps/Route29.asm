@@ -276,8 +276,9 @@ CatchingTutorialDebriefText:
 
 	para "If you want to"
 	line "learn more, go"
-	cont "to the ACADEMY"
-	cont "in VIOLET CITY!"
+
+	para "to the ACADEMY"
+	line "in VIOLET CITY!"
 
 	para "The students there"
 	line "know a lot about"

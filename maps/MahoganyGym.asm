@@ -304,7 +304,7 @@ PryceRematchText:
 
 Pryce_RematchDefeatText:
 	text "Ah, yet again I'm"
-	cont "impressed by your"
+	line "impressed by your"
 	cont "prowess."
 
 	para "With your strong"
