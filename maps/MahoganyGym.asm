@@ -303,8 +303,7 @@ PryceRematchText:
 	done
 
 Pryce_RematchDefeatText:
-	text "Ah, I am"
-	line "yet again"
+	text "Ah, yet again I'm"
 	cont "impressed by your"
 	cont "prowess."
 
@@ -422,14 +421,14 @@ MahoganyGymGuideText:
 	para "#MON for some"
 	line "50 years."
 
-	para "He's got a solid "
+	para "He's got a solid"
 	line "lineup of #MON"
 
 	para "to cover whatever"
 	line "you bring his way."
 
 	para "Fire is a good"
-	line "place to start"
+	line "place to start,"
 
 	para "but watch out"
 	line "for the rain!"

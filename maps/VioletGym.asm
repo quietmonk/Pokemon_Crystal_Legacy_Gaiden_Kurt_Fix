@@ -238,9 +238,8 @@ FalknerRematchText:
 	done
 
 Falkner_RematchDefeatText:
-	text "Wow..."
-	line "You beat me"
-	cont "again."
+	text "Wow…"
+	line "You beat me again."
 
 	para "I'm going to train"
 	line "harder to become"
@@ -320,8 +319,9 @@ VioletGymGuideText:
 	para "it can take a"
 	line "lot of hits."
 	
-	para "Rock and electric"
-	line "moves will hurt it"
+	para "You can hurt it"
+	line "with ELECTRIC- and"
+	cont "ROCK-type moves,"
 	
 	para "but watch out for"
 	line "MUD-SLAP!"

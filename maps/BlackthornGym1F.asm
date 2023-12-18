@@ -381,7 +381,7 @@ CooltrainerfLolaBeatenText:
 
 CooltrainerfLolaAfterBattleText:
 	text "Dragons are weak"
-	line "against dragon-"
+	line "against DRAGON-"
 	cont "type moves."
 	done
 
@@ -414,11 +414,10 @@ BlackthornGymGuideText:
 	line "ICE-type moves,"
 	
 	para "but you'll need"
-	line "some dragon-"
+	line "some DRAGON-type"
 	
-	para "type moves of"
-	line "your own if you"
-	cont "want to win."
+	para "moves too if you"
+	line "want to win."
 	
 	para "You got this!"
 	done
