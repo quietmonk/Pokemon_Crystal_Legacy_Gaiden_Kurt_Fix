@@ -35,10 +35,6 @@ MrPokemonsHouse_MapScripts:
 	itemnotify
 	setevent EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON
 	blackoutmod CHERRYGROVE_CITY
-	writetext MrPokemonExpShareText
-	waitbutton
-	verbosegiveitem EXP_SHARE
-	iffalse .full
 	writetext MrPokemonIntroText3
 	promptbutton
 	turnobject MRPOKEMONSHOUSE_GENTLEMAN, RIGHT
@@ -76,7 +72,7 @@ MrPokemonsHouse_MrPokemonScript:
 	writetext MrPokemonText_GimmeTheScale
 	yesorno
 	iffalse .refused
-	verbosegiveitem EXP_SHARE
+	verbosegiveitem SCOPE_LENS
 	iffalse .full
 	takeitem RED_SCALE
 	sjump .AlwaysNewDiscoveries
@@ -100,6 +96,10 @@ MrPokemonsHouse_OakScript:
 	playsound SFX_ITEM
 	waitsfx
 	setflag ENGINE_POKEDEX
+	writetext MrPokemonsHouse_ExpShareText
+	waitbutton
+	verbosegiveitem EXP_SHARE
+	iffalse .full
 	writetext MrPokemonsHouse_OakText2
 	waitbutton
 	closetext
@@ -148,6 +148,10 @@ MrPokemonsHouse_OakScript:
 
 .RivalTakesCyndaquil:
 	setevent EVENT_CYNDAQUIL_POKEBALL_IN_ELMS_LAB
+	end
+
+.full
+	closetext
 	end
 
 MrPokemonsHouse_ForeignMagazines:
@@ -213,12 +217,6 @@ MrPokemonIntroText3:
 	cont "the authority."
 	done
 
-MrPokemonExpShareText:
-	text "I also have a"
-	line "special item for"
-	cont "you."
-	done
-
 MrPokemonIntroText4:
 	text "Even PROF.OAK here"
 	line "recognizes that."
@@ -272,9 +270,7 @@ MrPokemonsHouse_OakText1:
 	para "Oh! What's this?"
 	line "A rare #MON!"
 
-	para "Let's see…"
-
-	para "Hm, I see!"
+	para "Hm, I see…"
 
 	para "I understand why"
 	line "PROF.ELM gave you"
@@ -293,8 +289,6 @@ MrPokemonsHouse_OakText1:
 
 	para "#MON with love"
 	line "and care."
-
-	para "…Ah!"
 
 	para "You seem to be"
 	line "dependable."
@@ -319,6 +313,12 @@ MrPokemonsHouse_OakText1:
 MrPokemonsHouse_GetDexText:
 	text "<PLAYER> received"
 	line "#DEX!"
+	done
+
+MrPokemonsHouse_ExpShareText:
+	text "I also have a"
+	line "special item for"
+	cont "you."
 	done
 
 MrPokemonsHouse_OakText2:
@@ -351,7 +351,7 @@ MrPokemonText_GimmeTheScale:
 	line "care to trade it?"
 
 	para "I can offer this"
-	line "EXP.SHARE I got"
+	line "SCOPE LENS I got"
 	cont "from PROF.OAK."
 	done
 
