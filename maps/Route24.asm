@@ -14,7 +14,7 @@ Route24RocketScript:
 	writetext Route24RocketSeenText
 	waitbutton
 	closetext
-	winlosstext Route24RocketBeatenText, -1
+	winlosstext Route24RocketBeatenText, 0
 	loadtrainer GRUNTM, GRUNTM_31
 	checkflag ENGINE_HARD_MODE
 	iffalse .normalmode_GRUNTM_31
