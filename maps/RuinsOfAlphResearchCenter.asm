@@ -356,7 +356,7 @@ RuinsOfAlphResearchCenterPC:
 	end
 
 FossilScientistIntroText:
-	text "Hiya!"
+	text "Hullo!"
 
 	para "I am important"
 	line "doctor!"
@@ -364,23 +364,21 @@ FossilScientistIntroText:
 	para "I study here rare"
 	line "#MON fossils!"
 
-	para "You! Have you a"
+	para "You! Have you the"
 	line "fossil for me?"
 	done
 
 MightTakeAWhileText:
-	text "But this one"
-	line "could take a"
-	cont "long time."
+	text "This one may take"
+	line "a very long time."
 
-	para "Are you sure"
-	line "you don't want"
-	cont "any other fossils"
-	cont "revived first?"
+	para "You don't want me"
+	line "looking at other"
+	cont "fossils first?"
 	done
 
 FossilScientistNoText:
-	text "No! Is too bad!"
+	text "No? Is too bad!"
 
 	para "You come again!"
 	done
