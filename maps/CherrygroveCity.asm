@@ -128,8 +128,8 @@ CherrygroveSilverSceneNorth:
 	startbattle
 	dontrestartmapmusic
 	reloadmap
-	iftrue .AfterVictorious
-	sjump .AfterYourDefeat
+	iftrue .AfterYourDefeat
+	sjump .AfterVictorious
 
 .Totodile:
 	winlosstext SilverCherrygroveWinText, SilverCherrygroveLossText
@@ -143,8 +143,8 @@ CherrygroveSilverSceneNorth:
 	startbattle
 	dontrestartmapmusic
 	reloadmap
-	iftrue .AfterVictorious
-	sjump .AfterYourDefeat
+	iftrue .AfterYourDefeat
+	sjump .AfterVictorious
 
 .Chikorita:
 	winlosstext SilverCherrygroveWinText, SilverCherrygroveLossText
@@ -158,8 +158,8 @@ CherrygroveSilverSceneNorth:
 	startbattle
 	dontrestartmapmusic
 	reloadmap
-	iftrue .AfterVictorious
-	sjump .AfterYourDefeat
+	iftrue .AfterYourDefeat
+	sjump .AfterVictorious
 
 .AfterVictorious:
 	playmusic MUSIC_RIVAL_AFTER
@@ -374,8 +374,8 @@ GuideGentPokecenterText:
 	para "You'll be relying"
 	line "on them a lot, so"
 
-	para "you better learn"
-	line "about them."
+	para "you better visit"
+	line "here soon."
 	done
 
 GuideGentMartText:
@@ -412,7 +412,7 @@ GuideGentSeaText:
 GuideGentGiftText:
 	text "Here…"
 
-	para "It's my house!"
+	para "This is my house!"
 	line "Thanks for your"
 	cont "company."
 
@@ -439,24 +439,24 @@ GuideGentNoText:
 	line "I enjoy doing…"
 
 	para "Fine. Come see me"
-	line "when you like."
+	line "whenever you like."
 	done
 
 CherrygroveRivalText_Seen:
 	text "<……> <……> <……>"
 
 	para "You got a #MON"
-	line "at the LAB."
+	line "at the LAB?"
 
-	para "What a waste."
-	line "A wimp like you."
+	para "What a waste, a"
+	line "wimp like you."
 
 	para "<……> <……> <……>"
 
 	para "Don't you get what"
 	line "I'm saying?"
 
-	para "Well, I too, have"
+	para "Well, I too have"
 	line "a good #MON."
 
 	para "I'll show you"
@@ -465,13 +465,16 @@ CherrygroveRivalText_Seen:
 
 SilverCherrygroveWinText:
 	text "Humph. Are you"
-	line "happy you won?"
+	line "proud of yourself?"
 	done
 
 CherrygroveRivalText_YouLost:
 	text "<……> <……> <……>"
 
-	para "My name's ???."
+	para "My name?"
+
+	para "You'll know it"
+	line "soon enough."
 
 	para "I'm going to be"
 	line "the world's great-"
@@ -479,7 +482,7 @@ CherrygroveRivalText_YouLost:
 	cont "trainer."
 	done
 
-SilverCherrygroveLossText:
+SilverCherrygroveLossText: ; unreferenced
 	text "Humph. That was a"
 	line "waste of time."
 	done
@@ -487,7 +490,10 @@ SilverCherrygroveLossText:
 CherrygroveRivalText_YouWon:
 	text "<……> <……> <……>"
 
-	para "My name's ???."
+	para "My name?"
+
+	para "Wouldn't you like"
+	line "to know?"
 
 	para "I'm going to be"
 	line "the world's great-"
