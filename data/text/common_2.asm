@@ -670,7 +670,9 @@ _SelectDifficultyText::
 	done
 
 _SelectDifficultyNormalText::
-	text "Classic #MON."
+	text "SHIFT mode & items"
+	line "in battle allowed,"
+	cont "no GYM LVL caps."
 	done
 
 _SelectDifficultyHardText::
