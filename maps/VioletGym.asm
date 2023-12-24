@@ -311,7 +311,7 @@ VioletGymGuideText:
 	line "is a bulky owl"
 	
 	para "that loves to"
-	line "eat berries."
+	line "eat BERRIES."
 	
 	para "While it's not"
 	line "the strongest,"
