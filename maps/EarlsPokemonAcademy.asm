@@ -235,12 +235,12 @@ EarlsPokemonAcademyYoungster1Text:
 	para "trade can evolve"
 	line "through leveling."
 
-	para "MACHAMP and"
+	para "MACHOKE and"
 	line "GRAVELER evolve"
 	cont "at LVL 38, while"
 	
-	para "ALAKAZAM and"
-	line "GENGAR evolve"
+	para "KADABRA and"
+	line "HAUNTER evolve"
 	cont "at LVL 42."
 
 	para "Some items, like"
