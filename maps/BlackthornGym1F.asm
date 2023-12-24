@@ -416,8 +416,9 @@ BlackthornGymGuideText:
 	para "but you'll need"
 	line "some DRAGON-type"
 	
-	para "moves too if you"
-	line "want to win."
+	para "moves of your own"
+	line "if you want to"
+	cont "win."
 	
 	para "You got this!"
 	done
