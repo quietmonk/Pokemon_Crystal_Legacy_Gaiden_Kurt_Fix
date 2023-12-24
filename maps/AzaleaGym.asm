@@ -392,8 +392,8 @@ AzaleaGymGuideText:
 	para "BUGSY's young, but"
 	line "his knowledge of"
 
-	para "bug #MON is"
-	line "for real."
+	para "bug #MON is for"
+	line "real."
 
 	para "It's going to be"
 	line "tough without my"

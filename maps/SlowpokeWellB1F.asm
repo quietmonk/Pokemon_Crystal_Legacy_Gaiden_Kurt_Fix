@@ -251,14 +251,14 @@ TrainerGruntM1WhenTalkText:
 
 GruntM2SeenText:
 	text "Hyuck-hyuck-hyuck!"
-	line "Quit taking SLOW-"
-	cont "POKETAILS?"
-	
-	para "You're nuts!"
-	line "If we obeyed you,"
-	
-	para "TEAM ROCKET's rep"
-	line "would be ruined!"
+
+	para "Quit taking SLOW-"
+	line "POKETAILS?"
+	cont "You're nuts!"
+
+	para "If we obeyed you,"
+	line "TEAM ROCKET's rep"
+	cont "would be ruined!"
 	done
 
 GruntM2BeatenText:

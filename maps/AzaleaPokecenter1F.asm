@@ -29,11 +29,11 @@ AzaleaPokecenter1FGentlemanText:
 	text "Do your #MON"
 	line "know HM moves?"
 
-	para "Those moves can"
-	line "be used even if"
+	para "They can be used"
+	line "outside battle"
 
-	para "your #MON has"
-	line "fainted."
+	para "even if your #-"
+	line "MON has fainted."
 	done
 
 AzaleaPokecenter1FUnusedText: ; unreferenced
@@ -59,7 +59,7 @@ AzaleaPokecenter1FPokefanFText:
 	line "APRICORNS?"
 
 	para "Crack one open,"
-	line "hollow it out and"
+	line "hollow it out, and"
 
 	para "fit it with a"
 	line "special device."

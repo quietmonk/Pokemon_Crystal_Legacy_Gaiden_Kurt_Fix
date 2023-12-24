@@ -139,7 +139,7 @@ CharcoalKilnApprenticeText3:
 	cont "found FARFETCH'D."
 
 	para "You're the cool-"
-	line "est, man!"
+	line "est!"
 	done
 
 FarfetchdText:

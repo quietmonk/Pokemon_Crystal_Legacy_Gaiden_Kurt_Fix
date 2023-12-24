@@ -15,8 +15,8 @@ IlexForestAzaleaGateGrannyScript:
 
 IlexForestAzaleaGateOfficerText:
 	text "ILEX FOREST is"
-	line "big. Be careful!"
-	cont "Don't get lost."
+	line "big. Be careful"
+	cont "not to get lost!"
 	done
 
 IlexForestAzaleaGateGrannyText:
