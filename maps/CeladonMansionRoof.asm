@@ -24,11 +24,20 @@ CeladonMansionRoofFisherText:
 	done
 
 CeladonMansionRoofGraffitiText:
-	text "There's graffiti"
-	line "on the wall…"
+	text "There is a poem"
+	line "graffitied here…"
 
-	para "<PLAYER> added a"
-	line "moustache!"
+	para "There once was a"
+	line "man from Japan,"
+
+	para "whose limericks"
+	line "never would scan."
+
+	para "When asked why"
+	line "this was, he said"
+	cont "because:"
+
+	para "I always try to cram as many syllables as I ever possibly can into the last line."
 	done
 
 CeladonMansionRoof_MapEvents:
