@@ -482,7 +482,7 @@ CherrygroveRivalText_YouLost:
 	cont "trainer."
 	done
 
-SilverCherrygroveLossText: ; unreferenced
+SilverCherrygroveLossText:
 	text "Humph. That was a"
 	line "waste of time."
 	done

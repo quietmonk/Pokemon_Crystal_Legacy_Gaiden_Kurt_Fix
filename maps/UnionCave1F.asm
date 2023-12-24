@@ -125,7 +125,7 @@ PokemaniacLarryBeatenText:
 
 PokemaniacLarryAfterBattleText:
 	text "Every Friday, you"
-	line "can hear #MON"
+	line "can hear mournful"
 
 	para "roars from deep"
 	line "inside the cave."
@@ -170,8 +170,8 @@ FirebreatherBillAfterBattleText:
 	text "On weekends, you"
 	line "can hear strange"
 
-	para "roars from deep in"
-	line "the cave."
+	para "#MON roars from"
+	line "deep in the cave."
 	done
 
 FirebreatherRaySeenText:

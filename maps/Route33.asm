@@ -199,8 +199,8 @@ Route33LassText:
 	line "bigger than I'd"
 	cont "expected."
 
-	para "I got too tired"
-	line "exploring for"
+	para "I wore myself out"
+	line "searching for"
 
 	para "MARILL, so I came"
 	line "outside."
