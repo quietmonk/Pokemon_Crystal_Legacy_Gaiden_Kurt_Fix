@@ -772,8 +772,6 @@ ElmText_ResearchAmbitions:
 	para "many mysteries of"
 	line "#MON."
 
-	para "You can count on"
-	line "it!"
 	done
 
 ElmText_GotAnEmail:
@@ -782,8 +780,8 @@ ElmText_GotAnEmail:
 
 	para "<……><……><……>"
 	line "Hm… Uh-huh…"
+	cont "Okay…"
 
-	para "Okay…"
 	done
 
 ElmText_MissionFromMrPokemon:
@@ -805,9 +803,7 @@ ElmText_MissionFromMrPokemon:
 	para "with our #MON"
 	line "research…"
 
-	para "Wait!"
-
-	para "I know!"
+	para "Wait, I know!"
 
 	para "<PLAY_G>, can you"
 	line "go in our place?"
@@ -1102,7 +1098,7 @@ ElmGiveEverstoneText2:
 
 	para "Give it to a #-"
 	line "MON you don't want"
-	cont "to evolve."
+	cont "to evolve yet."
 	done
 
 ElmText_CallYou:

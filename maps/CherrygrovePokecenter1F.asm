@@ -35,11 +35,12 @@ CherrygrovePokecenter1FTeacherScript:
 	end
 
 CherrygrovePokecenter1FFisherText:
-	text "It's great. I can"
-	line "store any number"
+	text "I can store all"
+	line "of my #MON and"
+	cont "items in the PC."
 
-	para "of #MON, and"
-	line "it's all free."
+	para "Technology is"
+	line "incredible!"
 	done
 
 CherrygrovePokecenter1FGentlemanText:

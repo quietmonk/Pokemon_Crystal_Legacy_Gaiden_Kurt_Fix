@@ -240,33 +240,27 @@ EarlsPokemonAcademyYoungster1Text:
 	cont "at LVL 38, while"
 	
 	para "ALAKAZAM and"
-	line "GENGAR evolve "
+	line "GENGAR evolve"
 	cont "at LVL 42."
 
 	para "Some items, like"
-	line "the METAL COAT,"
+	line "METAL COAT, have"
+	cont "been found to work"
+
+	para "similarly to evol-"
+	line "utionary stones."
 	
-	para "have also been"
-	line "found to evolve"
-	cont "certain #MON"
-	
-	para "similarly to"
-	line "evolution stones."
-	
-	para "A BRICK PIECE"
-	line "given to a"
-	cont "TYROGUE has led"
-	
-	para "to a new #MON"
-	line "discovery."
+	para "A BRICK PIECE used"
+	line "on a TYROGUE has"
+	cont "led to a new #-"
+	cont "MON discovery."
 	done
 
 EarlsPokemonAcademyGameboyKid1Text:
-    text "The newly dis-"
-    line "covered DARK-"
-
-    para "type deals"
-    line "physical damage."
+    text "The newly discov-"
+    line "ered DARK-type"
+    cont "deals physical"
+    cont "damage."
 
     para "The GHOST-type"
     line "deals special"
@@ -288,43 +282,40 @@ EarlsPokemonAcademyGameboyKid2Text:
 
     para "and some that were"
     line "once thought to be"
+    cont "underpowered have"
 
-    para "underpowered have"
-    line "seen increases"
-    cont "to their power."
+    para "seen increases"
+    line "to their power."
 
-    para "Most notably,"
-    line "the BUG-type has"
-
-    para "become far more"
-    line "viable in battle."
+    para "Most notably, the"
+    line "BUG-type is now"
+    cont "far more viable in"
+    cont "battle."
 
     para "The FIGHTING-type"
     line "has also improved"
-    cont "dramatically"
+    cont "dramatically over"
 
-    para "over the last"
-    line "three years."
+    para "the past three"
+    line "years."
     done
 
 EarlsPokemonAcademyYoungster2Text:
-    text "While still rec-"
-    line "ognizable, some"
-    cont "#MON once"
+    text "While still recog-"
+    line "nizable, some"
+    cont "#MON thought"
+    cont "to be nonviable"
 
-    para "thought to be"
-    line "nonviable have"
-    cont "seen small stat"
-
-    para "increases of"
-    line "5-20 base points."
+    para "have seen small"
+    line "stat increases of"
+    cont "5-20 base points."
 
     para "ARIADOS in par-"
     line "ticular has become"
-    cont "much faster,"
+    cont "much faster, with"
 
-    para "with a new base"
-    line "SPEED stat of 80."
+    para "a new base SPEED"
+    line "stat of 80."
 
     para "Many #MON can"
     line "learn moves they"
@@ -332,16 +323,15 @@ EarlsPokemonAcademyYoungster2Text:
 
     para "Nearly every #-"
     line "MON now learns"
-    cont "multiple moves"
+    cont "multiple moves of"
 
-    para "of its own type"
-    line "via level-up."
+    para "its own type via"
+    line "level-up."
 
     para "Many can now also"
     line "learn moves sooner"
-
-    para "than they could"
-    line "before."
+    cont "than they could"
+    cont "before."
 
     para "Be aware that your"
     line "opponents now use"
@@ -494,8 +484,7 @@ AcademyNotebookText3:
 AcademyStickerMachineText:
 	text "This super machine"
 	line "prints data out as"
-
-	para "stickers!"
+	cont "stickers!"
 	done
 
 EarlsPokemonAcademy_MapEvents:
