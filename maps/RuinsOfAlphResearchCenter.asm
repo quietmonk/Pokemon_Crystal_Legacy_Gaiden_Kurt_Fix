@@ -174,7 +174,7 @@ RuinsOfAlphResearchCenterPrinter:
 	closetext
 	end
 
-RuinsOfAlphResearchCenterPhoto: ; unreferenced
+RuinsOfAlphResearchCenterPhoto:
 	jumptext RuinsOfAlphResearchCenterProfSilktreePhotoText
 
 RuinsOfAlphResearchCenterBookshelf:
@@ -483,8 +483,11 @@ RuinsOfAlphResearchCenterScientist3_PrinterAvailable:
 	line "printer here for"
 	cont "handling UNOWN."
 
-	para "Feel free to use"
-	line "it anytime."
+	para "Also, you can now"
+	line "check your #MON"
+
+	para "to see their"
+	cont "HIDDEN POWER type."
 	done
 
 RuinsOfAlphResearchCenterScientist1Text:
@@ -492,9 +495,12 @@ RuinsOfAlphResearchCenterScientist1Text:
 	line "about 1500 years"
 	cont "old."
 
-	para "But it's not known"
-	line "why they were"
-	cont "built--or by whom."
+	para "Nobody knows why"
+	line "they were built--"
+	cont "or by whom."
+
+	para "It's all one big"
+	line "mystery…"
 	done
 
 RuinsOfAlphResearchCenterScientist1Text_GotUnownDex:
@@ -516,7 +522,7 @@ RuinsOfAlphResearchCenterScientist1Text_UnownAppeared:
 
 RuinsOfAlphResearchCenterScientist1Text_GotAllUnown:
 	text "Our investigation,"
-	line "with your help, is"
+	line "thanks to you, is"
 
 	para "giving us insight"
 	line "into the RUINS."
@@ -588,7 +594,7 @@ RuinsOfAlphResearchCenterUnusedText2: ; unreferenced
 	done
 
 RuinsOfAlphResearchCenterScientist2Text_GotAllUnown:
-	text "Why did those"
+	text "But why did those"
 	line "ancient patterns"
 
 	para "appear on the wall"
@@ -627,7 +633,7 @@ RuinsOfAlphResearchCenterProfSilktreePhotoText:
 	text "It's a photo of"
 	line "the RESEARCH"
 
-	para "CENTER'S founder,"
+	para "CENTER's founder,"
 	line "PROF.SILKTREE."
 	done
 
@@ -653,6 +659,7 @@ RuinsOfAlphResearchCenter_MapEvents:
 	bg_event  6,  5, BGEVENT_READ, RuinsOfAlphResearchCenterBookshelf
 	bg_event  3,  4, BGEVENT_READ, RuinsOfAlphResearchCenterPC
 	bg_event  7,  1, BGEVENT_READ, RuinsOfAlphResearchCenterPrinter
+	bg_event  5,  0, BGEVENT_READ, RuinsOfAlphResearchCenterPhoto
 
 	def_object_events
 	object_event  4,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist1Script, -1

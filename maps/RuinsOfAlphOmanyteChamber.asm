@@ -1,3 +1,6 @@
+	object_const_def
+	const RUINSOFALPHOMANYTECHAMBER_SUPER_NERD
+
 RuinsOfAlphOmanyteChamber_MapScripts:
 	def_scene_scripts
 	scene_script .CheckWall ; SCENE_DEFAULT
@@ -108,6 +111,17 @@ RuinsOfAlphOmanyteChamberSkyfallTopMovement:
 	skyfall_top
 	step_end
 
+TrainerSuperNerdStan:
+	trainer SUPER_NERD, STAN, EVENT_BEAT_SUPER_NERD_STAN, SuperNerdStanSeenText, SuperNerdStanBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext SuperNerdStanAfterBattleText
+	waitbutton
+	closetext
+	end
+
 RuinsOfAlphOmanyteChamberWallPatternLeftText:
 	text "Patterns appeared"
 	line "on the walls…"
@@ -141,15 +155,47 @@ RuinsOfAlphOmanyteChamberDescriptionText:
 	line "its ten tentacles."
 	done
 
+SuperNerdStanSeenText:
+	text "What do you want?"
+	line "I'm studying--"
+	cont "don't disturb me!"
+	done
+
+SuperNerdStanBeatenText:
+	text "Sorry…"
+	line "I'm frustrated by"
+
+	para "our lack of real"
+	line "understanding…"
+	done
+
+SuperNerdStanAfterBattleText:
+	text "The patterns on"
+	line "the walls appear"
+	cont "to be words!"
+
+	para "And those sliding"
+	line "stone panels seem"
+
+	para "to be signals of"
+	line "some kind."
+
+	para "I think they make"
+	line "#MON appear,"
+
+	para "but it's not clear"
+	line "yet…"
+	done
+
 RuinsOfAlphOmanyteChamber_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  3,  9, RUINS_OF_ALPH_OUTSIDE, 3
-	warp_event  4,  9, RUINS_OF_ALPH_OUTSIDE, 3
+	warp_event  3,  9, RUINS_OF_ALPH_OUTSIDE, 4
+	warp_event  4,  9, RUINS_OF_ALPH_OUTSIDE, 4
 	warp_event  3,  3, RUINS_OF_ALPH_INNER_CHAMBER, 6
 	warp_event  4,  3, RUINS_OF_ALPH_INNER_CHAMBER, 7
-	warp_event  4,  0, RUINS_OF_ALPH_OMANYTE_ITEM_ROOM, 1
+	warp_event  4,  0, RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM, 1
 
 	def_coord_events
 
@@ -162,3 +208,4 @@ RuinsOfAlphOmanyteChamber_MapEvents:
 	bg_event  4,  0, BGEVENT_UP, RuinsOfAlphOmanyteChamberWallPatternRight
 
 	def_object_events
+	object_event  2,  5, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_TRAINER, 0, TrainerSuperNerdStan, -1

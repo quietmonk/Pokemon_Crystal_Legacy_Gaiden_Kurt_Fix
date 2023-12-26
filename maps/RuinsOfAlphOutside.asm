@@ -110,17 +110,6 @@ TrainerPsychicNathan:
 	closetext
 	end
 
-TrainerSuperNerdStan: ; unreferenced
-	trainer SUPER_NERD, STAN, EVENT_BEAT_SUPER_NERD_STAN, SuperNerdStanSeenText, SuperNerdStanBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext SuperNerdStanAfterBattleText
-	waitbutton
-	closetext
-	end
-
 RuinsOfAlphOutsideMysteryChamberSign:
 	jumptext RuinsOfAlphOutsideMysteryChamberSignText
 
@@ -174,37 +163,6 @@ RuinsOfAlphOutsideScientistText:
 	para "I know! Let me up-"
 	line "grade your #-"
 	cont "DEX. Follow me."
-	done
-
-SuperNerdStanSeenText:
-	text "What do you want?"
-	line "I'm studying--"
-	cont "don't disturb me!"
-	done
-
-SuperNerdStanBeatenText:
-	text "Sorry…"
-	line "I'm frustrated by"
-
-	para "our lack of real"
-	line "understanding…"
-	done
-
-SuperNerdStanAfterBattleText:
-	text "The RUINS are from"
-	line "about 1500 years"
-	cont "ago."
-
-	para "Nobody knows who"
-	line "built them."
-
-	para "It's also not"
-	line "known if the #-"
-	cont "MON statues have"
-	cont "any meaning."
-
-	para "It's all one big"
-	line "mystery…"
 	done
 
 PsychicNathanSeenText:
@@ -282,10 +240,10 @@ RuinsOfAlphOutside_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2, 17, RUINS_OF_ALPH_HO_OH_CHAMBER, 1
+	warp_event  2, 17, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 1
 	warp_event 14,  7, RUINS_OF_ALPH_KABUTO_CHAMBER, 1
-	warp_event  2, 29, RUINS_OF_ALPH_OMANYTE_CHAMBER, 1
-	warp_event 16, 33, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 1
+	warp_event  2, 29, RUINS_OF_ALPH_HO_OH_CHAMBER, 1
+	warp_event 16, 33, RUINS_OF_ALPH_OMANYTE_CHAMBER, 1
 	warp_event 10, 13, RUINS_OF_ALPH_INNER_CHAMBER, 1
 	warp_event 17, 11, RUINS_OF_ALPH_RESEARCH_CENTER, 1
 	warp_event  6, 19, UNION_CAVE_B1F, 1
