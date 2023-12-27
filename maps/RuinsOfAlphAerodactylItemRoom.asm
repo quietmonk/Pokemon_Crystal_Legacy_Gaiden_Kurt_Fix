@@ -9,17 +9,17 @@ RuinsOfAlphAerodactylItemRoom_MapScripts:
 
 	def_callbacks
 
-RuinsOfAlphAerodactylItemRoomGoldBerry:
-	itemball GOLD_BERRY
+RuinsOfAlphAerodactylItemRoomHelixFossil:
+	itemball HELIX_FOSSIL
 
-RuinsOfAlphAerodactylItemRoomMoonStone:
-	itemball SUN_STONE
+RuinsOfAlphAerodactylItemRoomKingsRock:
+	itemball KINGS_ROCK
 
-RuinsOfAlphAerodactylItemRoomHealPowder:
-	itemball NUGGET
+RuinsOfAlphAerodactylItemRoomStardust:
+	itemball STARDUST
 
-RuinsOfAlphAerodactylItemRoomEnergyRoot:
-	itemball SHARP_BEAK
+RuinsOfAlphAerodactylItemRoomEnergyPowder:
+	itemball ENERGYPOWDER
 
 RuinsOfAlphAerodactylItemRoomAncientReplica:
 	jumptext RuinsOfAlphAerodactylItemRoomAncientReplicaText
@@ -46,7 +46,7 @@ RuinsOfAlphAerodactylItemRoom_MapEvents:
 	bg_event  5,  1, BGEVENT_READ, RuinsOfAlphAerodactylItemRoomAncientReplica
 
 	def_object_events
-	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphAerodactylItemRoomGoldBerry, EVENT_PICKED_UP_GOLD_BERRY_FROM_AERODACTYL_ITEM_ROOM
-	object_event  5,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphAerodactylItemRoomMoonStone, EVENT_PICKED_UP_MOON_STONE_FROM_AERODACTYL_ITEM_ROOM
-	object_event  2,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphAerodactylItemRoomHealPowder, EVENT_PICKED_UP_HEAL_POWDER_FROM_AERODACTYL_ITEM_ROOM
-	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphAerodactylItemRoomEnergyRoot, EVENT_PICKED_UP_ENERGY_ROOT_FROM_AERODACTYL_ITEM_ROOM
+	object_event  2,  4, SPRITE_FOSSIL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphAerodactylItemRoomHelixFossil, EVENT_PICKED_UP_HELIX_FOSSIL_FROM_AERODACTYL_ITEM_ROOM
+	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphAerodactylItemRoomKingsRock, EVENT_PICKED_UP_KINGS_ROCK_FROM_AERODACTYL_ITEM_ROOM
+	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphAerodactylItemRoomStardust, EVENT_PICKED_UP_STARDUST_FROM_AERODACTYL_ITEM_ROOM
+	object_event  5,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphAerodactylItemRoomEnergyPowder, EVENT_PICKED_UP_ENERGYPOWDER_FROM_AERODACTYL_ITEM_ROOM

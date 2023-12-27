@@ -198,39 +198,21 @@ RuinsOfAlphResearchCenterLeavesPlayerMovement:
 FossilScientist:
 	faceplayer
 	opentext
-	checkevent EVENT_GAVE_SCIENTIST_OLD_AMBER
-	iftrue .GiveAerodactyl
 	checkevent EVENT_GAVE_SCIENTIST_DOME_FOSSIL
 	iftrue .GiveKabuto
 	checkevent EVENT_GAVE_SCIENTIST_HELIX_FOSSIL
 	iftrue .GiveOmanyte
+	checkevent EVENT_GAVE_SCIENTIST_OLD_AMBER
+	iftrue .GiveAerodactyl
 	writetext FossilScientistIntroText
 	waitbutton
 	loadmenu .MoveMenuHeader
 	verticalmenu
 	closewindow
-	ifequal REVIVE_OLD_AMBER, .OldAmber
 	ifequal REVIVE_DOME_FOSSIL, .DomeFossil
 	ifequal REVIVE_HELIX_FOSSIL, .HelixFossil
+	ifequal REVIVE_OLD_AMBER, .OldAmber
 	sjump .No
-
-.OldAmber
-	checkitem OLD_AMBER
-	iffalse .No
-	getmonname STRING_BUFFER_3, AERODACTYL
-	writetext FossilScientistMonText
-	promptbutton
-	readvar VAR_BADGES
-	if_greater_than 6, .GotSevenBadges
-	writetext MightTakeAWhileText
-	yesorno
-	iffalse .No
-.GotSevenBadges:
-	setevent EVENT_GAVE_SCIENTIST_OLD_AMBER
-	takeitem OLD_AMBER
-	writetext FossilScientistGiveText
-	waitbutton
-	sjump .GaveScientistFossil
 
 .DomeFossil:
 	checkitem DOME_FOSSIL
@@ -257,6 +239,25 @@ FossilScientist:
 	waitbutton
 	sjump .GaveScientistFossil
 
+.OldAmber
+	checkitem OLD_AMBER
+	iffalse .No
+	getmonname STRING_BUFFER_3, AERODACTYL
+	writetext FossilScientistMonText
+	promptbutton
+	readvar VAR_BADGES
+	if_greater_than 6, .GotSevenBadges
+	writetext MightTakeAWhileText
+	yesorno
+	iffalse .No
+.GotSevenBadges:
+	setevent EVENT_GAVE_SCIENTIST_OLD_AMBER
+	takeitem OLD_AMBER
+	writetext FossilScientistGiveText
+	waitbutton
+	sjump .GaveScientistFossil
+
+
 .No
 	writetext FossilScientistNoText
 	waitbutton
@@ -272,22 +273,6 @@ FossilScientist:
 	pause 35
 	sjump FossilScientist
 
-.GiveAerodactyl:
-	readvar VAR_BADGES
-	if_less_than 7, .NotEnoughBadges
-	readvar VAR_PARTYCOUNT
-	ifequal PARTY_LENGTH, .NoRoom
-	clearevent EVENT_GAVE_SCIENTIST_OLD_AMBER
-	writetext FossilScientistDoneText
-	promptbutton
-	getmonname STRING_BUFFER_3, AERODACTYL
-	writetext FossilScientistReceiveText
-	playsound SFX_CAUGHT_MON
-	waitsfx
-	waitbutton
-	givepoke AERODACTYL, 25
-	closetext
-	end
 
 .GiveKabuto:
 	readvar VAR_BADGES
@@ -322,7 +307,24 @@ FossilScientist:
 	givepoke OMANYTE, 20
 	closetext
 	end
-	
+
+.GiveAerodactyl:
+	readvar VAR_BADGES
+	if_less_than 7, .NotEnoughBadges
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
+	clearevent EVENT_GAVE_SCIENTIST_OLD_AMBER
+	writetext FossilScientistDoneText
+	promptbutton
+	getmonname STRING_BUFFER_3, AERODACTYL
+	writetext FossilScientistReceiveText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	waitbutton
+	givepoke AERODACTYL, 25
+	closetext
+	end
+
 .NotEnoughBadges
 	writetext FossilScientistTimeText
 	waitbutton
@@ -344,9 +346,9 @@ FossilScientist:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 4 ; items
-	db "OLD AMBER@"
 	db "DOME FOSSIL@"
 	db "HELIX FOSSIL@"
+	db "OLD AMBER@"
 	db "CANCEL@"
 
 RuinsOfAlphResearchCenterPC:
@@ -364,7 +366,7 @@ FossilScientistIntroText:
 	para "I study here rare"
 	line "#MON fossils!"
 
-	para "You! Have you the"
+	para "You! Have you a"
 	line "fossil for me?"
 	done
 
@@ -372,9 +374,9 @@ MightTakeAWhileText:
 	text "This one may take"
 	line "a very long time."
 
-	para "You don't want me"
-	line "looking at other"
-	cont "fossils first?"
+	para "You are sure I am"
+	line "to look at this,"
+	cont "not others first?"
 	done
 
 FossilScientistNoText:

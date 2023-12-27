@@ -9,17 +9,19 @@ RuinsOfAlphOmanyteItemRoom_MapScripts:
 
 	def_callbacks
 
-RuinsOfAlphOmanyteItemRoomMysteryberry:
-	itemball MYSTERYBERRY
+RuinsOfAlphOmanyteItemRoomGSBall:
+	itemball GS_BALL
+	setevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
+	setevent EVENT_CAN_GIVE_GS_BALL_TO_KURT
 
-RuinsOfAlphOmanyteItemRoomMysticWater:
-	itemball TWISTEDSPOON
-
-RuinsOfAlphOmanyteItemRoomStardust:
-	itemball NUGGET
+RuinsOfAlphOmanyteItemRoomLightBall:
+	itemball LIGHT_BALL
 
 RuinsOfAlphOmanyteItemRoomStarPiece:
-	itemball MIRACLEBERRY
+	itemball STAR_PIECE
+
+RuinsOfAlphOmanyteItemRoomRevivalHerb:
+	itemball REVIVAL_HERB
 
 RuinsOfAlphOmanyteItemRoomAncientReplica:
 	jumptext RuinsOfAlphOmanyteItemRoomAncientReplicaText
@@ -46,7 +48,7 @@ RuinsOfAlphOmanyteItemRoom_MapEvents:
 	bg_event  5,  1, BGEVENT_READ, RuinsOfAlphOmanyteItemRoomAncientReplica
 
 	def_object_events
-	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomMysteryberry, EVENT_PICKED_UP_MYSTERYBERRY_FROM_OMANYTE_ITEM_ROOM
-	object_event  5,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomMysticWater, EVENT_PICKED_UP_MYSTIC_WATER_FROM_OMANYTE_ITEM_ROOM
-	object_event  2,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomStardust, EVENT_PICKED_UP_STARDUST_FROM_OMANYTE_ITEM_ROOM
-	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomStarPiece, EVENT_PICKED_UP_STAR_PIECE_FROM_OMANYTE_ITEM_ROOM
+	object_event  2,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomGSBall, EVENT_PICKED_UP_GS_BALL_FROM_OMANYTE_ITEM_ROOM
+	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomLightBall, EVENT_PICKED_UP_LIGHT_BALL_FROM_OMANYTE_ITEM_ROOM
+	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomStarPiece, EVENT_PICKED_UP_STAR_PIECE_FROM_OMANYTE_ITEM_ROOM
+	object_event  5,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomRevivalHerb, EVENT_PICKED_UP_REVIVAL_HERB_FROM_OMANYTE_ITEM_ROOM
