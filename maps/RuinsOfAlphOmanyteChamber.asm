@@ -10,7 +10,6 @@ RuinsOfAlphOmanyteChamber_MapScripts:
 	callback MAPCALLBACK_TILES, .HiddenDoors
 
 .CheckWall:
-	special OmanyteChamber
 	checkevent EVENT_WALL_OPENED_IN_OMANYTE_CHAMBER
 	iftrue .OpenWall
 	end
@@ -85,7 +84,7 @@ RuinsOfAlphOmanyteChamberDescriptionSign:
 RuinsOfAlphOmanyteChamberWallPatternLeft:
 	opentext
 	writetext RuinsOfAlphOmanyteChamberWallPatternLeftText
-	setval UNOWNWORDS_WATER
+	setval UNOWNWORDS_LIGHT
 	special DisplayUnownWords
 	closetext
 	end
@@ -95,7 +94,7 @@ RuinsOfAlphOmanyteChamberWallPatternRight:
 	iftrue .WallOpen
 	opentext
 	writetext RuinsOfAlphOmanyteChamberWallPatternRightText
-	setval UNOWNWORDS_WATER
+	setval UNOWNWORDS_LIGHT
 	special DisplayUnownWords
 	closetext
 	end
@@ -195,7 +194,7 @@ RuinsOfAlphOmanyteChamber_MapEvents:
 	warp_event  4,  9, RUINS_OF_ALPH_OUTSIDE, 4
 	warp_event  3,  3, RUINS_OF_ALPH_INNER_CHAMBER, 6
 	warp_event  4,  3, RUINS_OF_ALPH_INNER_CHAMBER, 7
-	warp_event  4,  0, RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM, 1
+	warp_event  4,  0, RUINS_OF_ALPH_OMANYTE_ITEM_ROOM, 1
 
 	def_coord_events
 

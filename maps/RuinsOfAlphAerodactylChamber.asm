@@ -7,6 +7,7 @@ RuinsOfAlphAerodactylChamber_MapScripts:
 	callback MAPCALLBACK_TILES, .HiddenDoors
 
 .CheckWall:
+	special AerodactylChamber
 	checkevent EVENT_WALL_OPENED_IN_AERODACTYL_CHAMBER
 	iftrue .OpenWall
 	end
@@ -81,7 +82,7 @@ RuinsOfAlphAerodactylChamberDescriptionSign:
 RuinsOfAlphAerodactylChamberWallPatternLeft:
 	opentext
 	writetext RuinsOfAlphAerodactylChamberWallPatternLeftText
-	setval UNOWNWORDS_LIGHT
+	setval UNOWNWORDS_WATER
 	special DisplayUnownWords
 	closetext
 	end
@@ -91,7 +92,7 @@ RuinsOfAlphAerodactylChamberWallPatternRight:
 	iftrue .WallOpen
 	opentext
 	writetext RuinsOfAlphAerodactylChamberWallPatternRightText
-	setval UNOWNWORDS_LIGHT
+	setval UNOWNWORDS_WATER
 	special DisplayUnownWords
 	closetext
 	end
@@ -148,7 +149,7 @@ RuinsOfAlphAerodactylChamber_MapEvents:
 	warp_event  4,  9, RUINS_OF_ALPH_OUTSIDE, 1
 	warp_event  3,  3, RUINS_OF_ALPH_INNER_CHAMBER, 8
 	warp_event  4,  3, RUINS_OF_ALPH_INNER_CHAMBER, 9
-	warp_event  4,  0, RUINS_OF_ALPH_HO_OH_ITEM_ROOM, 1
+	warp_event  4,  0, RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM, 1
 
 	def_coord_events
 

@@ -110,8 +110,10 @@
 	const SPRITE_ZAPDOS_OVERWORLD ; 6b
 	const SPRITE_CHRIS_RUN ; 6c
  	const SPRITE_KRIS_RUN ; 6d
- 	const SPRITE_FOSSIL
+ 	const SPRITE_DOME_FOSSIL
+ 	const SPRITE_HELIX_FOSSIL
  	const SPRITE_OLD_AMBER
+ 	const SPRITE_GS_BALL
 NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

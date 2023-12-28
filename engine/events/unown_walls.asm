@@ -10,9 +10,36 @@ HoOhChamber:
 .done
 	ret
 
-OmanyteChamber:
-	call GetMapAttributesPointer ; pointless?
+SpecialOmanyteChamber:
+	push de
+	push bc
+
+	call GetMapAttributesPointer
+	ld a, h
+	cp HIGH(RuinsOfAlphOmanyteChamber_MapAttributes)
+	jr nz, .nope
+	ld a, l
+	cp LOW(RuinsOfAlphOmanyteChamber_MapAttributes)
+	jr nz, .nope
+
 	ld de, EVENT_WALL_OPENED_IN_OMANYTE_CHAMBER
+	ld b, SET_FLAG
+	call EventFlagAction
+
+	scf
+	jr .done
+
+.nope
+	and a
+
+.done
+	pop bc
+	pop de
+	ret
+
+AerodactylChamber:
+	call GetMapAttributesPointer ; pointless?
+	ld de, EVENT_WALL_OPENED_IN_AERODACTYL_CHAMBER
 	ld b, CHECK_FLAG
 	call EventFlagAction
 	ld a, c
@@ -44,38 +71,11 @@ OmanyteChamber:
 
 .open
 	call GetMapAttributesPointer ; pointless?
-	ld de, EVENT_WALL_OPENED_IN_OMANYTE_CHAMBER
-	ld b, SET_FLAG
-	call EventFlagAction
-
-.nope
-	ret
-
-SpecialAerodactylChamber:
-	push de
-	push bc
-
-	call GetMapAttributesPointer
-	ld a, h
-	cp HIGH(RuinsOfAlphAerodactylChamber_MapAttributes)
-	jr nz, .nope
-	ld a, l
-	cp LOW(RuinsOfAlphAerodactylChamber_MapAttributes)
-	jr nz, .nope
-
 	ld de, EVENT_WALL_OPENED_IN_AERODACTYL_CHAMBER
 	ld b, SET_FLAG
 	call EventFlagAction
 
-	scf
-	jr .done
-
 .nope
-	and a
-
-.done
-	pop bc
-	pop de
 	ret
 
 SpecialKabutoChamber:
