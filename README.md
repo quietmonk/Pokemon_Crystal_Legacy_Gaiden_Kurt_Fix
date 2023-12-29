@@ -48,3 +48,7 @@ Make sure you have RGBDS 0.5.2 installed (newer versions will _not work!_) and r
 * [Pokemon Crystal Legacy](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy) by [Smith Plays Pokemon](https://www.youtube.com/@smithplayspokemon) - The hack on which this one is based. All of the work credited there was also used here.
 * [The pret Pokemon Crystal disassembly](https://github.com/pret/pokecrystal) - the project on which Legacy is based
 * Space Communist, for contributing custom sprite work
+
+### The following pret tutorials, from which code was pulled directly:
+* [Print text when you lose a trainer battle](https://github.com/pret/pokecrystal/wiki/Print-text-when-you-lose-a-trainer-battle) by Rangi42
+* [Correct grammar for plural trainers like Twins](https://github.com/pret/pokecrystal/wiki/Correct-grammar-for-plural-trainers-like-Twins) by Rangi42
