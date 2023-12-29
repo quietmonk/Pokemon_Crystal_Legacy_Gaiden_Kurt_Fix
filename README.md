@@ -41,6 +41,9 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysp
 17. Mt. Silver (don't think there's much dialog here…)
 18. Kanto? (Probably not)
 
+## Building:
+Make sure you have RGBDS 0.5.2 installed (newer versions will _not work!_) and run `make`
+
 ## Credits & Additional Info:
 * [Pokemon Crystal Legacy](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy) by [Smith Plays Pokemon](https://www.youtube.com/@smithplayspokemon) - The hack on which this one is based. All of the work credited there was also used here.
 * [The pret Pokemon Crystal disassembly](https://github.com/pret/pokecrystal) - the project on which Legacy is based
