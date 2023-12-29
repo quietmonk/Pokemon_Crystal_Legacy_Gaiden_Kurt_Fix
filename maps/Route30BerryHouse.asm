@@ -31,9 +31,9 @@ Route30BerrySpeechHouseMonEatBerriesText:
 	line "get healthier by"
 	cont "eating BERRIES."
 
-	para "They can even eat"
-	line "BERRIES they're"
-	cont "holding in battle."
+	para "One can even hold"
+	line "a BERRY and eat it"
+	cont "during a battle."
 
 	para "Here. I'll share"
 	line "one with you!"
