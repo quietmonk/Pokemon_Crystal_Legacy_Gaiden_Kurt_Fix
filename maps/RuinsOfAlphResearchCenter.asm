@@ -225,7 +225,7 @@ FossilScientist:
 	opentext
 	writetext FossilScientistGiveText
 	readvar VAR_BADGES
-	if_greater_than 3, .GotThreeBadges
+	if_greater_than 2, .GotThreeBadges
 	promptbutton
 	writetext FossilScientistMightTakeAWhileText
 .GotThreeBadges:
