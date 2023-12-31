@@ -1,4 +1,4 @@
-# Pokemon Crystal Legacy Gaiden Edition
+# Pokemon Crystal Legacy Gaiden
 
 This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplayspokemon) wonderful romhack of Pokemon Crystal, titled [Pokemon Crystal Legacy](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy). It consists mostly of simple text edits but with a few surprises here and there that don't drastically alter the gameplay of the hack it's based on.
 
@@ -52,7 +52,8 @@ Make sure you have RGBDS 0.5.2 installed (newer versions will _not work!_) and r
 ## Credits & Additional Info:
 * [Pokemon Crystal Legacy](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy) by [Smith Plays Pokemon](https://www.youtube.com/@smithplayspokemon) - The hack on which this one is based. All of the work credited there was also used here.
 * [The pret Pokemon Crystal disassembly](https://github.com/pret/pokecrystal) - the project on which Legacy is based
-* Space Communist, for contributing custom sprite work
+* My friend Space Communist, for contributing the sprites for the Entei Ruins of Alph puzzle and the dome fossil
+* [Namu Kadoshin](https://littlelimit.net/index.html), the 7x7 bitmap 外伝 characters used on the title screen are from their [Misaki Gothic](https://littlelimit.net/misaki.htm) font
 
 ### The following pret tutorials, from which code was pulled directly:
 * [Print text when you lose a trainer battle](https://github.com/pret/pokecrystal/wiki/Print-text-when-you-lose-a-trainer-battle) by Rangi42
