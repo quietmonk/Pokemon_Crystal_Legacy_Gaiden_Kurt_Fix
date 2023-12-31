@@ -7,8 +7,13 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysp
 * Edited text original to Legacy to be closer to the quality and formatting of Vanilla
 * Elaborated on optional tutorial text to give more information to any first-time Pokemon players who happen to play this hack
 * Fixed typos, grammatical errors, and formatting inconsistencies both from Legacy and Vanilla
-* Restores unused NPC's and interact text from the vanilla rom where possible
-* Ruins of Alph have been reworked and now follow a more logical order that allows for catching all Unown alphabetically. Also includes some (lore appropriate) changes I don't want to spoil.
+* A full rework of the Ruins of Alph:
+    * The chamber order has been adjusted so that the order players will most likely complete the chambers in will unlock the Unown forms alphabetically.
+    * The fossil scientist added in Legacy has had his script rewritten, he'll now automatically pick the fossil in your bag that he can revive soonest, and prompt you if (and only if) there's an earlier fossil you're skipping over.
+    * Fossils are now wall puzzle rewards rather than sliding block puzzle rewards. Wall puzzles themselves have been adjusted to be solvable at the correct points in the story.
+    * Cut trainer battle from Vanilla restored and added to Omanyte chamber, with a custom (legal) moveset
+    * Cut scientist in Kabuto chamber restored as previously mentioned trainer's after-battle text
+    * Minor description text restored from Vanilla and new text added in research center
 * Minor script changes, such as:
     * Route 29 trainer now uses previously unused text about waiting for daytime
     * Exp. Share now given by Prof. Oak instead of Mr. Pokemon
