@@ -310,10 +310,10 @@ NUM_UNOWN_PUZZLES EQU const_value
 ; DisplayUnownWords setval arguments
 ; UnownWalls and MenuHeaders_UnownWalls indexes (see data/events/unown_walls.asm)
 	const_def
-	const UNOWNWORDS_ESCAPE ; 0
-	const UNOWNWORDS_LIGHT  ; 1
-	const UNOWNWORDS_WATER  ; 2
-	const UNOWNWORDS_HO_OH  ; 3
+	const UNOWNWORDS_ESCAPE      ; 0
+	const UNOWNWORDS_LIGHT       ; 1
+	const UNOWNWORDS_WATER       ; 2
+	const UNOWNWORDS_SUICUNE     ; 3
 
 ; MoveTutor setval arguments
 	const_def 1

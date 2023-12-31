@@ -201,6 +201,8 @@ RuinsOfAlphResearchCenterLeavesPlayerMovement:
 FossilScientist:
 	faceplayer
 	opentext
+	checkevent EVENT_MADE_UNOWN_APPEAR_IN_RUINS
+	iffalse .NotReady
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	iftrue .GaveScientistFossil
 	checkevent EVENT_GAVE_SCIENTIST_DOME_FOSSIL
@@ -225,10 +227,10 @@ FossilScientist:
 	opentext
 	writetext FossilScientistGiveText
 	readvar VAR_BADGES
-	if_greater_than 2, .GotThreeBadges
+	if_greater_than 2, .GiveDomeFossil
 	promptbutton
 	writetext FossilScientistMightTakeAWhileText
-.GotThreeBadges:
+.GiveDomeFossil:
 	promptbutton
 	sjump .GaveScientistFossil
 
@@ -239,13 +241,15 @@ FossilScientist:
 	writetext FossilScientistMonText
 	promptbutton
 	readvar VAR_BADGES
-	if_greater_than 3, .GotFourBadges
+	if_greater_than 3, .GiveHelixFossil
 	writetext FossilScientistMightTakeAWhileText
 	promptbutton
+	checkevent EVENT_REVIVED_KABUTO
+	iftrue .GiveHelixFossil
 	writetext FossileScientistBadgeConfirmText
 	yesorno
 	iffalse .No
-.GotFourBadges:
+.GiveHelixFossil:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	setevent EVENT_GAVE_SCIENTIST_HELIX_FOSSIL
 	takeitem HELIX_FOSSIL
@@ -255,18 +259,24 @@ FossilScientist:
 
 .OldAmber:
 	checkitem OLD_AMBER
-	iffalse .NoFossilsInBag
+	iffalse .GSBall
 	getmonname STRING_BUFFER_3, AERODACTYL
 	writetext FossilScientistMonText
 	promptbutton
 	readvar VAR_BADGES
-	if_greater_than 6, .GotSevenBadges
+	if_greater_than 6, .GiveOldAmber
 	writetext FossilScientistMightTakeAWhileText
 	promptbutton
+	checkevent EVENT_REVIVED_KABUTO
+	iffalse .OldAmberConfirm
+	checkevent EVENT_REVIVED_OMANYTE
+	iffalse .OldAmberConfirm
+	sjump .GiveOldAmber
+.OldAmberConfirm
 	writetext FossileScientistBadgeConfirmText
 	yesorno
 	iffalse .No
-.GotSevenBadges:
+.GiveOldAmber:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	setevent EVENT_GAVE_SCIENTIST_OLD_AMBER
 	takeitem OLD_AMBER
@@ -274,7 +284,12 @@ FossilScientist:
 	waitbutton
 	sjump .GaveScientistFossil
 
-
+.GSBall:
+	checkitem GS_BALL
+	iffalse .NoFossilsInBag
+	showemote EMOTE_QUESTION, RUINSOFALPHRESEARCHCENTER_FOSSILSCIENTIST, 15
+	writetext FossilScientistGSBallText
+	sjump .End
 
 .GiveKabuto:
 	readvar VAR_BADGES
@@ -292,6 +307,7 @@ FossilScientist:
 	setval KABUTO
 	special GameCornerPrizeMonCheckDex
 	givepoke KABUTO, 15
+	setevent EVENT_REVIVED_KABUTO
 	closetext
 	end
 
@@ -311,6 +327,7 @@ FossilScientist:
 	setval OMANYTE
 	special GameCornerPrizeMonCheckDex
 	givepoke OMANYTE, 20
+	setevent EVENT_REVIVED_OMANYTE
 	closetext
 	end
 
@@ -337,8 +354,8 @@ FossilScientist:
 	writetext FossilScientistTimeText
 	sjump .End
 
-.No:
-	writetext FossilScientistNoText
+.NotReady:
+	writetext FossilScientistNotReadyText
 	sjump .End
 .NoFossilsInBag:
 	writetext FossilScientistNoFossilsText
@@ -346,6 +363,8 @@ FossilScientist:
 .NoRoom:
 	writetext FossilScientistPartyFullText
 	sjump .End
+.No:
+	writetext FossilScientistNoText
 .End:
 	waitbutton
 	closetext
@@ -380,6 +399,16 @@ FossileScientistBadgeConfirmText:
 	text "You are sure I am"
 	line "to look at this,"
 	cont "not others first?"
+	done
+
+FossilScientistGSBallText:
+	text "This is an ancient"
+	line "# BALL, maybe?"
+	cont "Hm… It won't open."
+
+	para "You should take it"
+	line "to a # BALL"
+	cont "expert."
 	done
 
 FossilScientistNoFossilsText:
@@ -445,6 +474,17 @@ FossilScientistReceiveText:
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
+	done
+
+FossilScientistNotReadyText:
+	text "Hullo!"
+
+	para "I am busy making"
+	line "adjustments to my"
+	cont "machine."
+
+	para "Please come again"
+	line "later."
 	done
 
 RuinsOfAlphResearchCenterModifiedDexText:
@@ -625,8 +665,8 @@ RuinsOfAlphResearchCenterAcademicBooksText:
 	done
 
 RuinsOfAlphResearchCenterResurrectionMachineText:
-	text "Cabinets full of"
-	line "complex machinery."
+	text "This machine looks"
+	line "very complex."
 
 	para "Better not touch"
 	line "anything!"

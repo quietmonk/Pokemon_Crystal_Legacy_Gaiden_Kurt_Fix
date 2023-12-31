@@ -1,3 +1,6 @@
+;; This is actually the Entei chamber now but it would be too much work
+;; to change it everywhere in the codebase.
+
 RuinsOfAlphHoOhChamber_MapScripts:
 	def_scene_scripts
 	scene_script .CheckWall ; SCENE_DEFAULT
@@ -82,7 +85,7 @@ RuinsOfAlphHoOhChamberDescriptionSign:
 RuinsOfAlphHoOhChamberWallPatternLeft:
 	opentext
 	writetext RuinsOfAlphHoOhChamberWallPatternLeftText
-	setval UNOWNWORDS_HO_OH
+	setval UNOWNWORDS_SUICUNE
 	special DisplayUnownWords
 	closetext
 	end
@@ -92,7 +95,7 @@ RuinsOfAlphHoOhChamberWallPatternRight:
 	iftrue .WallOpen
 	opentext
 	writetext RuinsOfAlphHoOhChamberWallPatternRightText
-	setval UNOWNWORDS_HO_OH
+	setval UNOWNWORDS_SUICUNE
 	special DisplayUnownWords
 	closetext
 	end
@@ -134,11 +137,12 @@ RuinsOfAlphHoOhChamberAncientReplicaText:
 	done
 
 RuinsOfAlphHoOhChamberDescriptionText:
-	text "A #MON that"
-	line "flew gracefully on"
+	text "A blazing fast"
+	line "#MON that tore"
+	cont "across the land."
 
-	para "rainbow-colored"
-	line "wings."
+	para "Volcanoes erupted"
+	line "when it barked."
 	done
 
 RuinsOfAlphHoOhChamber_MapEvents:

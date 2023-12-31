@@ -510,7 +510,9 @@
 	const EVENT_GOT_ODD_EGG
 	const_skip ; unused
 	const EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
-; Unused: next 167 events
+	const EVENT_REVIVED_KABUTO
+	const EVENT_REVIVED_OMANYTE
+; Unused: next 165 events
 
 	const_next 1000
 ; Trainer flags

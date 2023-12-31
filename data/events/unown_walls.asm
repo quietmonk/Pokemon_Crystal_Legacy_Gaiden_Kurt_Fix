@@ -28,7 +28,7 @@ UnownWalls:
 	unownwall "WATER"
 ; UNOWNWORDS_HO_OH
 	; db $0e, $2c, $64, $2c, $0e, -1
-	unownwall "HO-OH"
+	unownwall "SUICUNE"
 
 MenuHeaders_UnownWalls:
 ; UNOWNWORDS_ESCAPE
@@ -42,4 +42,4 @@ MenuHeaders_UnownWalls:
 	menu_coords 4, 4, 15, 9
 ; UNOWNWORDS_HO_OH
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 4, 4, 15, 9
+	menu_coords 2, 4, 17, 9

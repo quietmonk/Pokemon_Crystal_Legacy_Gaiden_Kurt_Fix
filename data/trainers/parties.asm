@@ -2500,8 +2500,8 @@ SailorGroup:
 
 SuperNerdGroup:
 	; SUPER_NERD (1)
-	db "STAN@", TRAINERTYPE_NORMAL
-	db 20, GRIMER
+	db "STAN@", TRAINERTYPE_MOVES
+	db 20, GRIMER,     SLUDGE, LICK, DISABLE, MEAN_LOOK
 	db -1 ; end
 
 	; SUPER_NERD (2)
