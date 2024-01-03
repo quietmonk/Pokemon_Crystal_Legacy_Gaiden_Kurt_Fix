@@ -38,8 +38,8 @@ Marts:
 	dw MartMtMoon
 	dw MartIndigoPlateau
 	dw MartUnderground
-	dw MartBerrys
-	dw MartBerrys2
+	dw MartBerries
+	dw MartBerries2
 	assert_table_length NUM_MARTS
 
 MartCherrygrove:
@@ -211,6 +211,7 @@ MartMahogany1:
 	db TM_ROAR
 	db TINYMUSHROOM
 	db SLOWPOKETAIL
+	db SMOKE_BALL
 	db POKE_BALL
 	db POTION
 	db -1 ; end
@@ -221,6 +222,7 @@ MartMahogany2:
 	db METAL_COAT
 	db UP_GRADE
 	db BRICK_PIECE
+	db SMOKE_BALL
 	db TM_DIG
 	db TM_ROLLOUT
 	db TM_SWIFT
@@ -460,7 +462,7 @@ MartUnderground:
 	db REVIVAL_HERB
 	db -1 ; end
 
-MartBerrys:
+MartBerries:
 	db 8 ; # items
 	db BERRY
 	db BITTER_BERRY
@@ -472,7 +474,7 @@ MartBerrys:
 	db PSNCUREBERRY
 	db -1 ; end
 
-MartBerrys2:
+MartBerries2:
 	db 10 ; # items
 	db BERRY
 	db BITTER_BERRY

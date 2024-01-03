@@ -16,6 +16,7 @@ RuinsOfAlphHoOhChamber_MapScripts:
 	end
 
 .OpenWall:
+	setevent EVENT_CAN_GIVE_GS_BALL_TO_KURT
 	sdefer .WallOpenScript
 	end
 

@@ -53,10 +53,10 @@ Route2DiglettsCaveSign:
 	jumptext Route2DiglettsCaveSignText
 
 Route2DireHit:
-	itemball BRIGHTPOWDER
+	itemball DIRE_HIT
 
 Route2MaxPotion:
-	itemball SILVERPOWDER
+	itemball MAX_POTION
 
 Route2Carbos:
 	itemball CARBOS

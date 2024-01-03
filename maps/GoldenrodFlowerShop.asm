@@ -110,10 +110,10 @@ BerryMartScript:
 	if_less_than 7, .NotSevenBadges
 	sjump .SevenBadges
 .NotSevenBadges
-	pokemart MARTTYPE_STANDARD, MART_BERRYS
+	pokemart MARTTYPE_STANDARD, MART_BERRIES
 	sjump .end
 .SevenBadges
-	pokemart MARTTYPE_STANDARD, MART_BERRYS_2
+	pokemart MARTTYPE_STANDARD, MART_BERRIES_2
 .end
 	closetext
 	end

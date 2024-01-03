@@ -36,7 +36,7 @@ MountMortarB1FKiyoScript:
 	writetext MountMortarB1FReceiveMonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
-	givepoke TYROGUE, 10
+	givepoke TYROGUE, 10, FOCUS_BAND
 	setevent EVENT_GOT_TYROGUE_FROM_KIYO
 .GotTyrogue:
 	writetext MountMortarB1FKiyoGotTyrogueText

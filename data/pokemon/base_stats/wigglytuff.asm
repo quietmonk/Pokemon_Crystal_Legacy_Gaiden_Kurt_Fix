@@ -6,7 +6,7 @@
 	db NORMAL, NORMAL ; type
 	db 50 ; catch rate
 	db 109 ; base exp
-	db NO_ITEM, NO_ITEM ; items
+	db NO_ITEM, POLKADOT_BOW ; items
 	db GENDER_F75 ; gender ratio
 	db 100 ; unknown 1
 	db 2 ; step cycles to hatch

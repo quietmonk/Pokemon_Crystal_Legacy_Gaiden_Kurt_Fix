@@ -11,11 +11,9 @@ RuinsOfAlphHoOhItemRoom_MapScripts:
 
 RuinsOfAlphHoOhItemRoomGSBall:
 	itemball GS_BALL
-	setevent EVENT_GOT_GS_BALL_FROM_POKECOM_CENTER
-	setevent EVENT_CAN_GIVE_GS_BALL_TO_KURT
 
-RuinsOfAlphHoOhItemRoomLightBall:
-	itemball LIGHT_BALL
+RuinsOfAlphHoOhItemRoomBrightPowder:
+	itemball BRIGHTPOWDER
 
 RuinsOfAlphHoOhItemRoomStarPiece:
 	itemball STAR_PIECE
@@ -49,6 +47,6 @@ RuinsOfAlphHoOhItemRoom_MapEvents:
 
 	def_object_events
 	object_event  2,  4, SPRITE_GS_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphHoOhItemRoomGSBall, EVENT_PICKED_UP_GS_BALL_FROM_HO_OH_ITEM_ROOM
-	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphHoOhItemRoomLightBall, EVENT_PICKED_UP_LIGHT_BALL_FROM_HO_OH_ITEM_ROOM
+	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphHoOhItemRoomBrightPowder, EVENT_PICKED_UP_BRIGHTPOWDER_FROM_HO_OH_ITEM_ROOM
 	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphHoOhItemRoomStarPiece, EVENT_PICKED_UP_STAR_PIECE_FROM_HO_OH_ITEM_ROOM
 	object_event  5,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphHoOhItemRoomRevivalHerb, EVENT_PICKED_UP_REVIVAL_HERB_FROM_HO_OH_ITEM_ROOM

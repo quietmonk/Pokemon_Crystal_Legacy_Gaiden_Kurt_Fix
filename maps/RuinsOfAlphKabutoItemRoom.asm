@@ -15,8 +15,8 @@ RuinsOfAlphKabutoItemRoomDomeFossil:
 RuinsOfAlphKabutoItemRoomFireStone:
 	itemball FIRE_STONE
 
-RuinsOfAlphKabutoItemRoomPearl:
-	itemball PEARL
+RuinsOfAlphKabutoItemRoomSilverLeaf:
+	itemball SILVER_LEAF
 
 RuinsOfAlphKabutoItemRoomHealPowder:
 	itemball HEAL_POWDER
@@ -48,5 +48,5 @@ RuinsOfAlphKabutoItemRoom_MapEvents:
 	def_object_events
 	object_event  2,  4, SPRITE_DOME_FOSSIL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphKabutoItemRoomDomeFossil, EVENT_PICKED_UP_DOME_FOSSIL_FROM_KABUTO_ITEM_ROOM
 	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphKabutoItemRoomFireStone, EVENT_PICKED_UP_FIRE_STONE_FROM_KABUTO_ITEM_ROOM
-	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphKabutoItemRoomPearl, EVENT_PICKED_UP_PEARL_FROM_KABUTO_ITEM_ROOM
+	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphKabutoItemRoomSilverLeaf, EVENT_PICKED_UP_SILVER_LEAF_FROM_KABUTO_ITEM_ROOM
 	object_event  5,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphKabutoItemRoomHealPowder, EVENT_PICKED_UP_HEAL_POWDER_FROM_KABUTO_ITEM_ROOM

@@ -12,11 +12,11 @@ RuinsOfAlphOmanyteItemRoom_MapScripts:
 RuinsOfAlphOmanyteItemRoomHelixFossil:
 	itemball HELIX_FOSSIL
 
-RuinsOfAlphOmanyteItemRoomQuickClaw:
-	itemball QUICK_CLAW
+RuinsOfAlphOmanyteItemRoomBrickPiece:
+	itemball BRICK_PIECE
 
-RuinsOfAlphOmanyteItemRoomStardust:
-	itemball STARDUST
+RuinsOfAlphOmanyteItemRoomGoldLeaf:
+	itemball GOLD_LEAF
 
 RuinsOfAlphOmanyteItemRoomEnergyPowder:
 	itemball ENERGYPOWDER
@@ -47,6 +47,6 @@ RuinsOfAlphOmanyteItemRoom_MapEvents:
 
 	def_object_events
 	object_event  2,  4, SPRITE_HELIX_FOSSIL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomHelixFossil, EVENT_PICKED_UP_HELIX_FOSSIL_FROM_OMANYTE_ITEM_ROOM
-	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomQuickClaw, EVENT_PICKED_UP_QUICK_CLAW_FROM_OMANYTE_ITEM_ROOM
-	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomStardust, EVENT_PICKED_UP_STARDUST_FROM_OMANYTE_ITEM_ROOM
+	object_event  5,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomBrickPiece, EVENT_PICKED_UP_BRICK_PIECE_FROM_OMANYTE_ITEM_ROOM
+	object_event  2,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomGoldLeaf, EVENT_PICKED_UP_GOLD_LEAF_FROM_OMANYTE_ITEM_ROOM
 	object_event  5,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, RuinsOfAlphOmanyteItemRoomEnergyPowder, EVENT_PICKED_UP_ENERGYPOWDER_FROM_OMANYTE_ITEM_ROOM

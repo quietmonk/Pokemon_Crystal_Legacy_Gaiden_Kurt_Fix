@@ -110,6 +110,9 @@ TrainerPsychicNathan:
 	closetext
 	end
 
+RuinsofAlphOutsideHiddenTwistedSpoon:
+	hiddenitem TWISTEDSPOON, EVENT_RUINS_OF_ALPH_OUTSIDE_HIDDEN_TWISTEDSPOON
+
 RuinsOfAlphOutsideMysteryChamberSign:
 	jumptext RuinsOfAlphOutsideMysteryChamberSignText
 
@@ -260,6 +263,7 @@ RuinsOfAlphOutside_MapEvents:
 	bg_event 16,  8, BGEVENT_READ, RuinsOfAlphOutsideMysteryChamberSign
 	bg_event 12, 16, BGEVENT_READ, RuinsOfAlphSign
 	bg_event 18, 12, BGEVENT_READ, RuinsOfAlphResearchCenterSign
+	bg_event  3, 18, BGEVENT_ITEM, RuinsofAlphOutsideHiddenTwistedSpoon
 
 	def_object_events
 	object_event  4, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerPsychicNathan, -1

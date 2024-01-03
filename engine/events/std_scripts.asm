@@ -341,10 +341,10 @@ BugContestResultsWarpScript:
 BugContestResultsScript:
 	clearflag ENGINE_BUG_CONTEST_TIMER
 	clearevent EVENT_WARPED_FROM_ROUTE_35_NATIONAL_PARK_GATE
+	clearevent EVENT_CONTEST_OFFICER_HAS_SILVERPOWDER
+	clearevent EVENT_CONTEST_OFFICER_HAS_POISON_BARB
 	clearevent EVENT_CONTEST_OFFICER_HAS_SUN_STONE
-	clearevent EVENT_CONTEST_OFFICER_HAS_EVERSTONE
 	clearevent EVENT_CONTEST_OFFICER_HAS_GOLD_BERRY
-	clearevent EVENT_CONTEST_OFFICER_HAS_BERRY
 	opentext
 	farwritetext ContestResults_ReadyToJudgeText
 	waitbutton
@@ -356,8 +356,8 @@ BugContestResultsScript:
 	farwritetext ContestResults_ConsolationPrizeText
 	promptbutton
 	waitsfx
-	verbosegiveitem BERRY
-	iffalse BugContestResults_NoRoomForBerry
+	verbosegiveitem GOLD_BERRY
+	iffalse BugContestResults_NoRoomForGoldBerry
 
 BugContestResults_DidNotWin:
 	farwritetext ContestResults_DidNotWinText
@@ -411,6 +411,22 @@ BugContestResults_CleanUp:
 
 BugContestResults_FirstPlace:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
+	getitemname STRING_BUFFER_4, SILVERPOWDER
+	farwritetext ContestResults_PlayerWonAPrizeText
+	waitbutton
+	verbosegiveitem SILVERPOWDER
+	iffalse BugContestResults_NoRoomForSilverPowder
+	sjump BugContestResults_ReturnAfterWinnersPrize
+
+BugContestResults_SecondPlace:
+	getitemname STRING_BUFFER_4, POISON_BARB
+	farwritetext ContestResults_PlayerWonAPrizeText
+	waitbutton
+	verbosegiveitem POISON_BARB
+	iffalse BugContestResults_NoRoomForPoisonBarb
+	sjump BugContestResults_ReturnAfterWinnersPrize
+
+BugContestResults_ThirdPlace:
 	getitemname STRING_BUFFER_4, SUN_STONE
 	farwritetext ContestResults_PlayerWonAPrizeText
 	waitbutton
@@ -418,20 +434,16 @@ BugContestResults_FirstPlace:
 	iffalse BugContestResults_NoRoomForSunStone
 	sjump BugContestResults_ReturnAfterWinnersPrize
 
-BugContestResults_SecondPlace:
-	getitemname STRING_BUFFER_4, EVERSTONE
-	farwritetext ContestResults_PlayerWonAPrizeText
-	waitbutton
-	verbosegiveitem EVERSTONE
-	iffalse BugContestResults_NoRoomForEverstone
+BugContestResults_NoRoomForSilverPowder:
+	farwritetext BugContestPrizeNoRoomText
+	promptbutton
+	setevent EVENT_CONTEST_OFFICER_HAS_SILVERPOWDER
 	sjump BugContestResults_ReturnAfterWinnersPrize
 
-BugContestResults_ThirdPlace:
-	getitemname STRING_BUFFER_4, GOLD_BERRY
-	farwritetext ContestResults_PlayerWonAPrizeText
-	waitbutton
-	verbosegiveitem GOLD_BERRY
-	iffalse BugContestResults_NoRoomForGoldBerry
+BugContestResults_NoRoomForPoisonBarb:
+	farwritetext BugContestPrizeNoRoomText
+	promptbutton
+	setevent EVENT_CONTEST_OFFICER_HAS_POISON_BARB
 	sjump BugContestResults_ReturnAfterWinnersPrize
 
 BugContestResults_NoRoomForSunStone:
@@ -440,22 +452,10 @@ BugContestResults_NoRoomForSunStone:
 	setevent EVENT_CONTEST_OFFICER_HAS_SUN_STONE
 	sjump BugContestResults_ReturnAfterWinnersPrize
 
-BugContestResults_NoRoomForEverstone:
-	farwritetext BugContestPrizeNoRoomText
-	promptbutton
-	setevent EVENT_CONTEST_OFFICER_HAS_EVERSTONE
-	sjump BugContestResults_ReturnAfterWinnersPrize
-
 BugContestResults_NoRoomForGoldBerry:
 	farwritetext BugContestPrizeNoRoomText
 	promptbutton
 	setevent EVENT_CONTEST_OFFICER_HAS_GOLD_BERRY
-	sjump BugContestResults_ReturnAfterWinnersPrize
-
-BugContestResults_NoRoomForBerry:
-	farwritetext BugContestPrizeNoRoomText
-	promptbutton
-	setevent EVENT_CONTEST_OFFICER_HAS_BERRY
 	sjump BugContestResults_DidNotWin
 
 BugContestResults_CopyContestantsToResults:

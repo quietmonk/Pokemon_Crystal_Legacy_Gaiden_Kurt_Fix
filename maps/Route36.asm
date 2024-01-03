@@ -325,10 +325,20 @@ TrainerPsychicMark:
 .Script:
 	endifjustbattled
 	opentext
+	checkevent EVENT_ROUTE_36_HIDDEN_TWISTEDSPOON
+	iffalse .TwistedSpoonHint
 	writetext PsychicMarkAfterBattleText
 	waitbutton
 	closetext
 	end
+.TwistedSpoonHint:
+	writetext PsychicMarkTwistedSpoonHint
+	waitbutton
+	closetext
+	end
+
+Route36HiddenTwistedSpoon:
+	hiddenitem TWISTEDSPOON, EVENT_ROUTE_36_HIDDEN_TWISTEDSPOON
 
 ArthurScript:
 	faceplayer
@@ -577,6 +587,12 @@ PsychicMarkAfterBattleText:
 	line "was thinking."
 	done
 
+PsychicMarkTwistedSpoonHint:
+	text "I'd have won if"
+	line "only I hadn't lost"
+	cont "my TWISTEDSPOON…"
+	done
+
 SchoolboyAlan1SeenText:
 	text "Thanks to my stud-"
 	line "ies, I'm ready for"
@@ -693,6 +709,7 @@ Route36_MapEvents:
 	bg_event 45, 11, BGEVENT_READ, RuinsOfAlphNorthSign
 	bg_event 55,  7, BGEVENT_READ, Route36Sign
 	bg_event 21,  7, BGEVENT_READ, Route36TrainerTips1
+	bg_event 19, 14, BGEVENT_ITEM, Route36HiddenTwistedSpoon
 
 	def_object_events
 	object_event 20, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerPsychicMark, -1
