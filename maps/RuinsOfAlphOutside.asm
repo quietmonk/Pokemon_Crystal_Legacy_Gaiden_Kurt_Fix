@@ -111,7 +111,7 @@ TrainerPsychicNathan:
 	end
 
 RuinsofAlphOutsideHiddenTwistedSpoon:
-	hiddenitem TWISTEDSPOON, EVENT_RUINS_OF_ALPH_OUTSIDE_HIDDEN_TWISTEDSPOON
+	hiddenitem TWISTEDSPOON, EVENT_HIDDEN_TWISTEDSPOON
 
 RuinsOfAlphOutsideMysteryChamberSign:
 	jumptext RuinsOfAlphOutsideMysteryChamberSignText
