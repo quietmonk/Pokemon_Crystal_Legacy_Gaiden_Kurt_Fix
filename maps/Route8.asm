@@ -61,7 +61,13 @@ TrainerSupernerdTom:
 .Script:
 	endifjustbattled
 	opentext
+	checkflag ENGINE_HARD_MODE
+	iftrue .NoBadgeBoost
 	writetext SupernerdTomAfterBattleText
+	sjump .End
+.NoBadgeBoost:
+	writetext SupernerdTomAfterBattleText_NoBadgeBoost
+.End:
 	waitbutton
 	closetext
 	end
@@ -157,6 +163,12 @@ SupernerdTomAfterBattleText:
 	text "GYM BADGES give"
 	line "you advantages in"
 	cont "battles."
+	done
+
+SupernerdTomAfterBattleText_NoBadgeBoost:
+	text "GYM BADGES prove"
+	line "you're a capable"
+	cont "#MON trainer."
 	done
 
 Route8LockedDoorText:

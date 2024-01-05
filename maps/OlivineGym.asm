@@ -68,7 +68,12 @@ OlivineGymJasmineScript:
 .FightDone:
 	checkevent EVENT_GOT_TM23_IRON_TAIL
 	iftrue .GotIronTail
+	checkflag ENGINE_HARD_MODE
+	iftrue .GiveTMIronTail
 	writetext Jasmine_BadgeSpeech
+	promptbutton
+.GiveTMIronTail:
+	writetext Jasmine_TakeThisToo
 	promptbutton
 	verbosegiveitem TM_IRON_TAIL
 	iffalse .NoRoomForIronTail
@@ -83,7 +88,7 @@ OlivineGymJasmineScript:
 	waitbutton
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iffalse .NoRoomForIronTail
-	writetext JasmineRematchText
+	writetext Jasmine_RematchText
 	yesorno
 	iftrue .JasmineRematch
 .NoRoomForIronTail:
@@ -195,8 +200,10 @@ Jasmine_BadgeSpeech:
 	text "MINERALBADGE"
 	line "raises #MON's"
 	cont "DEFENSE."
+	done
 
-	para "…Um… Please take"
+Jasmine_TakeThisToo:
+	text "…Um… Please take"
 	line "this too…"
 	done
 
@@ -217,7 +224,7 @@ Jasmine_GoodLuck:
 	cont "but good luck…"
 	done
 
-JasmineRematchText:
+Jasmine_RematchText:
 	text "Want to have a"
 	line "rematch with me?"
 	done

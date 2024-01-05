@@ -80,6 +80,13 @@ MahoganyGymPryceScript:
 	setevent EVENT_BEAT_BOARDER_DOUGLAS
 	writetext PryceText_GlacierBadgeSpeech
 	promptbutton
+	checkflag ENGINE_HARD_MODE
+	iftrue .GiveTMIcyWind
+	writetext PryceText_GlacierBadgeBoostText
+	promptbutton
+.GiveTMIcyWind:
+	writetext PryceText_TakeThisToo
+	promptbutton
 	verbosegiveitem TM_ICY_WIND
 	iffalse MahoganyGym_NoRoomForIcyWind
 	setevent EVENT_GOT_TM16_ICY_WIND
@@ -93,7 +100,7 @@ PryceScript_Defeat:
 	waitbutton
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iffalse .CantRematchYet
-	writetext PryceRematchText
+	writetext Pryce_RematchText
 	yesorno
 	iftrue .PryceRematch
 .CantRematchYet:
@@ -257,16 +264,20 @@ Text_ReceivedGlacierBadge:
 	done
 
 PryceText_GlacierBadgeSpeech:
-	text "That BADGE will"
-	line "raise the SPECIAL"
-	cont "stats of #MON."
-
-	para "It also lets your"
-	line "#MON use WHIRL-"
-	cont "POOL to get across"
+	text "That BADGE allows"
+	line "#MON to use"
+	cont "WHIRLPOOL to cross"
 	cont "real whirlpools."
+	done
 
-	para "And this… This is"
+PryceText_GlacierBadgeBoostText:
+	text "It will also raise"
+	line "the SPECIAL stats"
+	cont "of your #MON."
+	done
+
+PryceText_TakeThisToo:
+	text "And this… This is"
 	line "a gift from me!"
 	done
 
@@ -297,7 +308,7 @@ PryceText_CherishYourPokemon:
 	line "together!"
 	done
 
-PryceRematchText:
+Pryce_RematchText:
 	text "Want to have a"
 	line "rematch with me?"
 	done

@@ -35,6 +35,11 @@ VermilionGymSurgeScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_THUNDERBADGE
+	checkflag ENGINE_HARD_MODE
+	iftrue .NoBadgeBoost
+	writetext LtSurgeThunderBadgeBoostText
+	promptbutton
+.NoBadgeBoost:
 	writetext LtSurgeThunderBadgeText
 	waitbutton
 	closetext
@@ -143,12 +148,14 @@ ReceivedThunderBadgeText:
 	line "THUNDERBADGE."
 	done
 
-LtSurgeThunderBadgeText:
+LtSurgeThunderBadgeBoostText:
 	text "SURGE: THUNDER-"
 	line "BADGE increases"
 	cont "#MON's speed. "
+	done
 
-	para "Consider it proof"
+LtSurgeThunderBadgeText:
+	text "Consider it proof"
 	line "that you defeated"
 
 	para "me. You wear it"

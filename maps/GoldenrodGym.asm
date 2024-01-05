@@ -72,6 +72,13 @@ GoldenrodGymWhitneyScript:
 .GotPlainBadge:
 	writetext WhitneyPlainBadgeText
 	promptbutton
+	checkflag ENGINE_HARD_MODE
+	iftrue .GiveTMAttract
+	writetext WhitneyPlainBadgeBoostText
+	promptbutton
+.GiveTMAttract:
+	writetext WhitneyTakeThisToo
+	promptbutton
 	verbosegiveitem TM_ATTRACT
 	iffalse .NoRoomForAttract
 	setevent EVENT_GOT_TM45_ATTRACT
@@ -264,12 +271,16 @@ WhitneyPlainBadgeText:
 
 	para "STRENGTH outside"
 	line "of battle."
+	done
 
-	para "It also boosts"
+WhitneyPlainBadgeBoostText:
+	text "It also boosts"
 	line "your #MON's"
 	cont "SPEED."
+	done
 
-	para "Oh, you can have"
+WhitneyTakeThisToo:
+	text "Oh, you can have"
 	line "this too!"
 	done
 
