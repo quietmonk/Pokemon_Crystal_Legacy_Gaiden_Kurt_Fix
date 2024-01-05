@@ -7,6 +7,7 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysP
 * Edited text original to Legacy to be closer to the quality and formatting of Vanilla
 * Elaborated on optional tutorial text to give more information to any first-time Pokémon players who happen to play this hack
 * Fixed typos, grammatical errors, and formatting inconsistencies both from Legacy and Vanilla
+* Hard Mode now disables badge boosts and the additional 25% chance for NPC trainers to miss with status or stat lowering moves. Added branching dialog to skip dialog mentioning badge boosts when Hard Mode is active.
 * All held effect items are now available in-game without the need for Mystery Gift, Pokémon Stadium 2, nor trading in Pokémon from RBY. See docs/spoiler/HeldItemLocations.txt for spoilers on where to find them all.
 * A full rework of the Ruins of Alph:
     * The chamber order has been adjusted so that the order players will most likely complete the chambers in will unlock the Unown forms alphabetically.
@@ -23,7 +24,13 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysP
 ## To-do:
 * Continue with text edits. Currently all gym leader fights are complete, along with roughly ¼ of the main story.
 * Give access to all items and decorations locked behind Mystery Gift, Pokémon Stadium/2, and trade of Gen 1 Pokémon (since you can get all 251 Pokémon in Legacy, all items should be available too)
-    * All decorations will be bought by Mom using the money saving system
+    * ~~ In-game source for all held items~~
+    * Add all decorations to Mom's phone gift table
+    * In-game sources for all types of mail
+    * Maybe: Add renewable sources for silver/gold leaf and set up an NPC to exchange them for evo stones, stat boosting items, or TM's? Maybe Buena?
+* Revert, at least partially, egg hatch time reductions from Legacy (Odd Egg hatches way too fast)
+* Battle engine fixes?
+* Slot machine minigame enhancements?
 
 ## Progress:
 1. ~~New Bark Town & Route 29~~ ✅ Done!
