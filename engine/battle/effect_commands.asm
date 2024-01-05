@@ -3739,7 +3739,13 @@ BattleCommand_SleepTarget:
 	and a
 	jr nz, .dont_fail
 
+	; Not in Battle Tower
 	ld a, [wInBattleTowerBattle]
+	and a
+	jr nz, .dont_fail
+
+	; Not in Hard Mode
+	ld a, [wDifficultyFlags]
 	and a
 	jr nz, .dont_fail
 
@@ -3827,6 +3833,10 @@ BattleCommand_Poison:
 	jr z, .dont_sample_failure
 
 	ld a, [wLinkMode]
+	and a
+	jr nz, .dont_sample_failure
+
+	ld a, [wDifficultyFlags]
 	and a
 	jr nz, .dont_sample_failure
 
@@ -4492,6 +4502,10 @@ BattleCommand_StatDown:
 	jr nz, .DidntMiss
 
 	ld a, [wInBattleTowerBattle]
+	and a
+	jr nz, .DidntMiss
+
+	ld a, [wDifficultyFlags]
 	and a
 	jr nz, .DidntMiss
 
@@ -6016,6 +6030,10 @@ BattleCommand_Paralyze:
 	jr nz, .dont_sample_failure
 
 	ld a, [wInBattleTowerBattle]
+	and a
+	jr nz, .dont_sample_failure
+
+	ld a, [wDifficultyFlags]
 	and a
 	jr nz, .dont_sample_failure
 

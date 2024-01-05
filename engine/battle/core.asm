@@ -6862,6 +6862,10 @@ BadgeStatBoosts:
 	and a
 	ret nz
 
+	ld a, [wDifficultyFlags]
+	and a
+	ret nz
+
 	ld a, [wJohtoBadges]
 
 ; Swap badges 3 (PlainBadge) and 5 (MineralBadge).

@@ -131,7 +131,7 @@
 	const EVENT_GOT_TM12_SWEET_SCENT
 	const EVENT_RELEASED_THE_BEASTS
 	const EVENT_GOT_MASTER_BALL_FROM_ELM
-; Johto hidden items - two more in Crystal Exclusive Events
+; Johto hidden items - one more in Crystal Exclusive Events
 	const EVENT_TIN_TOWER_4F_HIDDEN_MAX_POTION
 	const EVENT_TIN_TOWER_5F_HIDDEN_FULL_RESTORE
 	const EVENT_TIN_TOWER_5F_HIDDEN_CARBOS

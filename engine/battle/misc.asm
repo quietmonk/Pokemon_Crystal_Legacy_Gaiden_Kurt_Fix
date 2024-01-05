@@ -157,6 +157,10 @@ DoBadgeTypeBoosts:
 	and a
 	ret nz
 
+	ld a, [wDifficultyFlags]
+	and a
+	ret nz
+
 	push de
 	push bc
 
