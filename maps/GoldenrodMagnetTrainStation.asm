@@ -111,7 +111,8 @@ GoldenrodMagnetTrainStationOfficerTheTrainHasntComeInText:
 	line "the passengers on"
 	cont "my back!"
 
-	para "That won't work."
+	para "No, that won't"
+	line "work…"
 	done
 
 GoldenrodMagnetTrainStationOfficerAreYouComingAboardText:
@@ -124,14 +125,14 @@ GoldenrodMagnetTrainStationOfficerAreYouComingAboardText:
 
 GoldenrodMagnetTrainStationOfficerRightThisWayText:
 	text "May I see your"
-	line "rail PASS, please?"
+	line "rail PASS?"
 
-	para "OK. Right this"
+	para "Okay, right this"
 	line "way, please."
 	done
 
 GoldenrodMagnetTrainStationOfficerYouDontHaveARailPassText:
-	text "Sorry. You don't"
+	text "Sorry, you don't"
 	line "have a rail PASS."
 	done
 

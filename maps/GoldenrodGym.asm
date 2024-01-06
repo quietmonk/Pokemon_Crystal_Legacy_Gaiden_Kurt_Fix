@@ -362,7 +362,7 @@ BridgetWhitneyCriesText:
 	text "Oh, no. You made"
 	line "WHITNEY cry."
 
-	para "It's OK. She'll"
+	para "It's okay, she'll"
 	line "stop soon. She"
 
 	para "always cries when"

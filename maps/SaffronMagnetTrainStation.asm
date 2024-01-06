@@ -140,9 +140,9 @@ SaffronMagnetTrainStationOfficerAreYouComingOnBoardText:
 
 SaffronMagnetTrainStationOfficerRightThisWayText:
 	text "May I see your"
-	line "rail PASS, please?"
+	line "rail PASS?"
 
-	para "OK. Right this"
+	para "Okay, right this"
 	line "way, please."
 	done
 
