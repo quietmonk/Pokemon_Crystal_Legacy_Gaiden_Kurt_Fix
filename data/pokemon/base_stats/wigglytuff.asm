@@ -9,7 +9,7 @@
 	db NO_ITEM, POLKADOT_BOW ; items
 	db GENDER_F75 ; gender ratio
 	db 100 ; unknown 1
-	db 2 ; step cycles to hatch
+	db 5 ; step cycles to hatch
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/wigglytuff/front.dimensions"
 	dw NULL, NULL ; unused (beta front/back pics)

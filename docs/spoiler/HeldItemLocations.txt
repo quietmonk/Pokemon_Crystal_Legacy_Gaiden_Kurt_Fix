@@ -1,7 +1,7 @@
 AMULET_COIN     -   Goldenrod Basement 1F, wild Meowth
 BERSERK_GENE    -   Celadon Cave, wild Mewtwo
 BLACKBELT_I     -   Fighting Dojo, Lake of Rage (Wed), wild Machoke
-BLACKGLASSES    -   Dark Cave (Blackthorn)
+BLACKGLASSES    -   Dark Cave (Blackthorn), wild Larvitar
 BRIGHTPOWDER    -   Ruins of Alph (Ho-Oh (Entei) Item Room)
 CHARCOAL        -   Charcoal Kiln Apprentice, Azalea Mart, wild fire starters, Magmar
 CLEANSE_TAG     -   Route 5 Cleanse Tag house (RBY Daycare)
