@@ -680,8 +680,8 @@ UndergroundSilverRetreatMovement2:
 UndergroundSilverBeforeText:
 	text "Hold it!"
 
-	para "I saw you, so I"
-	line "tailed you."
+	para "I saw you in town,"
+	line "so I tailed you."
 
 	para "I don't need you"
 	line "underfoot while I"
@@ -689,15 +689,12 @@ UndergroundSilverBeforeText:
 	para "take care of TEAM"
 	line "ROCKET."
 
-	para "…Wait a second."
-	line "You beat me be-"
-	cont "fore, didn't you?"
-
-	para "That was just a"
-	line "fluke."
+	para "You beat me last"
+	line "time, but that was"
+	cont "just a fluke."
 	
 	para "I've been training"
-	line "my team and now"
+	line "my #MON and now"
 
 	para "I will repay my"
 	line "debts!"
@@ -710,8 +707,8 @@ UndergroundSilverWinText:
 	para "I've assembled the"
 	line "toughest #MON."
 
-	para "I didn't ease up"
-	line "on the gas."
+	para "I've worked them"
+	line "as hard I could."
 
 	para "So why do I lose?"
 	done
@@ -789,8 +786,8 @@ GruntM11SeenText:
 	text "Open one shutter,"
 	line "another closes."
 
-	para "Bet you can't get"
-	line "where you want!"
+	para "Bet you can't find"
+	line "your way through!"
 	done
 
 GruntM11BeatenText:
@@ -844,8 +841,8 @@ BurglarDuncanBeatenText:
 
 BurglarDuncanAfterBattleText:
 	text "Steal and sell!"
-	line "That's basic in"
-	cont "crime, kid!"
+	line "That's Crime 101,"
+	cont "kid!"
 	done
 
 BurglarEddieSeenText:

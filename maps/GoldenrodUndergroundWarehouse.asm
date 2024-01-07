@@ -148,25 +148,24 @@ GruntM15SeenText:
 
 GruntM15BeatenText:
 	text "Hyuck-hyuck-hyuck!"
-	line "You're so good!"
-	
-	para "This TEAM ROCKET"
-	line "thing is just"
-	
-	para "a job, but I can"
-	line "see it hurts"
-	
-	para "others. That's it, "
-	line "I'm leaving."
-	
-	para "Thank you so much."
-	line "Sorry GIOVANNI!"
+	line "That was a blast!"
+	cont "I'll remember you!"
 	done
 
 GruntM15AfterBattleText:
 	text "Hyuck-hyuck-hyuck!"
-	line "That was a blast!"
-	cont "I'll remember you!"
+	line "You're too good!"
+
+	para "This TEAM ROCKET"
+	line "gig pays pretty"
+	cont "good,"
+
+	para "but I don't like"
+	line "hurting others, so"
+	cont "I'm leaving now."
+
+	para "Thank you so much."
+	line "Sorry GIOVANNI!"
 	done
 
 DirectorIntroText:
