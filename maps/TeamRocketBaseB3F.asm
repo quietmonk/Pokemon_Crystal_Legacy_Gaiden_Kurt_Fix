@@ -461,29 +461,24 @@ GruntF5AfterBattleText:
 
 	para "But it's useless"
 	line "unless you have"
-	cont "two passwords."
+	cont "both passwords."
 	done
 
 GruntM28SeenText:
 	text "Hyuck-hyuck-hyuck!"
-
-	para "I remember you"
-	line "from the well!"
+	line "I remember you!"
 
 	para "You're challenging"
 	line "me again?"
 
-	para "Hah! You're nuts,"
-	line "but you have guts!"
-
-	para "I'll warn you,"
+	para "I'm warning you,"
 	line "I got better!"
 
-	para "If you can beat"
-	line "me, I'll tell you"
+	para "I'll bet you the"
+	line "password to the"
 
-	para "a password to the"
-	line "boss's room!"
+	para "boss's room that"
+	line "you can't beat me!"
 	done
 
 GruntM28BeatenText:
@@ -494,10 +489,13 @@ GruntM28BeatenText:
 GruntM28AfterBattleText:
 	text "Hyuck-hyuck-hyuck!"
 
+	para "You may be nuts,"
+	line "but you have guts!"
+
 	para "The password to"
 	line "the boss's room…"
 
-	para "Uh…, I think it is"
+	para "Uh… I think it's"
 	line "RATICATE TAIL."
 	done
 
