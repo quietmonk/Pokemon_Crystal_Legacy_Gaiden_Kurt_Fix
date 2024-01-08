@@ -14,9 +14,9 @@ CianwoodPharmacist:
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_SECRETPOTION_FROM_PHARMACY
-	iftrue .Mart
+	iftrue .MartFirstTime
 	checkevent EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS
-	iffalse .Mart
+	iffalse .MartFirstTime
 	writetext PharmacistGiveSecretpotionText
 	promptbutton
 	giveitem SECRETPOTION
@@ -30,16 +30,16 @@ CianwoodPharmacist:
 	closetext
 	end
 
-.Mart:
+.MartFirstTime:
 	checkevent EVENT_HEARD_PHARMACY_EXPLANATION
-	iffalse .MartFirstTime
+	iftrue .Mart
+	writetext PharmacistBitterMedicineWarnText
+	setevent EVENT_HEARD_PHARMACY_EXPLANATION
+	promptbutton
+.Mart:
 	pokemart MARTTYPE_PHARMACY, MART_CIANWOOD
 	closetext
 	end
-.MartFirstTime:
-	writetext PharmacistBitterMedicineWarnText
-	setevent EVENT_HEARD_PHARMACY_EXPLANATION
-	sjump .Mart
 
 CianwoodPharmacyBookshelf:
 	jumpstd DifficultBookshelfScript
