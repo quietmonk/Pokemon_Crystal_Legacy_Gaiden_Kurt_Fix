@@ -19,7 +19,7 @@ FlowerShopTeacherScript:
 	promptbutton
 	verbosegiveitem SQUIRTBOTTLE
 	setevent EVENT_GOT_SQUIRTBOTTLE
-.SkipSquirtBottle
+.SkipSquirtBottle:
 	checkevent EVENT_MET_FLORIA
 	iffalse .HaventMetFloria
 	checkevent EVENT_TALKED_TO_FLORIA_AT_FLOWER_SHOP
@@ -37,7 +37,7 @@ FlowerShopTeacherScript:
 	closetext
 	end
 	
-.GotReward
+.GotReward:
 	sjump .Lalala
 
 .Lalala:
@@ -109,12 +109,12 @@ BerryMartScript:
 	readvar VAR_BADGES
 	if_less_than 7, .NotSevenBadges
 	sjump .SevenBadges
-.NotSevenBadges
+.NotSevenBadges:
 	pokemart MARTTYPE_STANDARD, MART_BERRIES
 	sjump .end
-.SevenBadges
+.SevenBadges:
 	pokemart MARTTYPE_STANDARD, MART_BERRIES_2
-.end
+.end:
 	closetext
 	end
 

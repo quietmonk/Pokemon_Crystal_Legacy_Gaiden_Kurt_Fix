@@ -31,9 +31,15 @@ CianwoodPharmacist:
 	end
 
 .Mart:
+	checkevent EVENT_HEARD_PHARMACY_EXPLANATION
+	iffalse .MartFirstTime
 	pokemart MARTTYPE_PHARMACY, MART_CIANWOOD
 	closetext
 	end
+.MartFirstTime:
+	writetext PharmacistBitterMedicineWarnText
+	setevent EVENT_HEARD_PHARMACY_EXPLANATION
+	sjump .Mart
 
 CianwoodPharmacyBookshelf:
 	jumpstd DifficultBookshelfScript
@@ -68,6 +74,17 @@ PharmacistDescribeSecretpotionText:
 
 	para "I only offer it in"
 	line "an emergency."
+	done
+
+PharmacistBitterMedicineWarnText:
+	text "I sell inexpensive"
+	line "herbal medicine."
+
+	para "It's effective,"
+	line "but a bit bitter."
+
+	para "Your #MON may"
+	line "not like it."
 	done
 
 CianwoodPharmacy_MapEvents:

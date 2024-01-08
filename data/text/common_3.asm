@@ -541,14 +541,12 @@ _MartFinalPriceText::
 _HerbShopLadyIntroText::
 	text "Hello, dear."
 
-	para "I sell inexpensive"
-	line "herbal medicine."
+	para "I sell rare and"
+	line "valuable stones."
 
-	para "They're good, but"
-	line "a trifle bitter."
-
-	para "Your #MON may"
-	line "not like them."
+	para "They've been known"
+	line "to make #MON"
+	cont "change forms."
 
 	para "Hehehehe…"
 	done
