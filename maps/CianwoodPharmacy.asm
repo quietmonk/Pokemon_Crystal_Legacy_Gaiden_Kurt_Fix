@@ -14,9 +14,9 @@ CianwoodPharmacist:
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_SECRETPOTION_FROM_PHARMACY
-	iftrue .MartFirstTime
+	iftrue .Mart
 	checkevent EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS
-	iffalse .MartFirstTime
+	iffalse .Mart
 	writetext PharmacistGiveSecretpotionText
 	promptbutton
 	giveitem SECRETPOTION
@@ -30,14 +30,6 @@ CianwoodPharmacist:
 	closetext
 	end
 
-.MartFirstTime:
-	checkevent EVENT_HEARD_PHARMACY_EXPLANATION
-	iftrue .Mart
-	writetext PharmacistBitterMedicineWarnText
-	setevent EVENT_HEARD_PHARMACY_EXPLANATION
-	waitbutton
-	closetext
-	end
 .Mart:
 	pokemart MARTTYPE_PHARMACY, MART_CIANWOOD
 	closetext
@@ -76,17 +68,6 @@ PharmacistDescribeSecretpotionText:
 
 	para "I only offer it in"
 	line "an emergency."
-	done
-
-PharmacistBitterMedicineWarnText:
-	text "I sell inexpensive"
-	line "herbal medicine."
-
-	para "It's effective,"
-	line "but a bit bitter."
-
-	para "Your #MON may"
-	line "not like it."
 	done
 
 CianwoodPharmacy_MapEvents:

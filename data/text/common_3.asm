@@ -630,8 +630,17 @@ _BargainShopComeAgainText::
 	done
 
 _PharmacyIntroText::
-	text "What's up? Need"
-	line "some medicine?"
+	text "I sell inexpensive"
+	line "herbal medicine."
+
+	para "It's effective,"
+	line "but a bit bitter."
+
+	para "Your #MON may"
+	line "not like it."
+
+	para "Would you like"
+	line "some?"
 	done
 
 _PharmacyHowManyText::
