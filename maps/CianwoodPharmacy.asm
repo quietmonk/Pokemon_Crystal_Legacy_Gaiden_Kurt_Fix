@@ -35,7 +35,9 @@ CianwoodPharmacist:
 	iftrue .Mart
 	writetext PharmacistBitterMedicineWarnText
 	setevent EVENT_HEARD_PHARMACY_EXPLANATION
-	promptbutton
+	waitbutton
+	closetext
+	end
 .Mart:
 	pokemart MARTTYPE_PHARMACY, MART_CIANWOOD
 	closetext
