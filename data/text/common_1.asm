@@ -344,6 +344,15 @@ _LookAdorableDecoText::
 	text "."
 	done
 
+_LookPlayConsoleText::
+	text "<PLAYER> played the"
+	line "@"
+	text_ram wStringBuffer3
+	text "."
+	para "Better get going--"
+	line "no time to lose!"
+	done
+
 _LookGiantDecoText::
 	text "A giant doll! It's"
 	line "fluffy and cuddly."
@@ -371,8 +380,9 @@ _MomItsInPCText::
 
 _MomFoundADollText::
 	text "While shopping"
-	line "today, I saw this"
-	cont "adorable doll, so"
+	line "today, I found"
+	para "something nice for"
+	line "your room, so"
 	prompt
 
 _MomItsInYourRoomText::
