@@ -8,7 +8,11 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysP
 * Elaborated on optional tutorial text to give more information to any first-time Pokémon players who happen to play this hack
 * Fixed typos, grammatical errors, and formatting inconsistencies both from Legacy and Vanilla
 * Hard Mode now disables badge boosts and the additional 25% chance for NPC trainers to miss with status or stat lowering moves. Added branching dialog to skip dialog mentioning badge boosts when Hard Mode is active.
-* All held effect items are now available in-game without the need for Mystery Gift, Pokémon Stadium 2, nor trading in Pokémon from RBY. See docs/spoiler/HeldItemLocations.txt for spoilers on where to find them all.
+* Step counts required to hatch eggs have been adjusted up to roughly 50% of those in Vanilla, Legacy originally had them set to around 30% and even as low as 10% for some species.
+* The following items are now available without use of Mystery Gift, trading from Gen 1, or Pokemon Stadium 2:
+    * All held items (see docs/spoiler/HeldItemLocations.txt for list)
+    * All room decorations are now available from Mom, including ones previously unattainable due to bugs in Pokemon Stadium 2
+    * All mail types can now be purchased in stores, including ones previously tied to the long defunct mobile system
 * A full rework of the Ruins of Alph:
     * The chamber order has been adjusted so that the order players will most likely complete the chambers in will unlock the Unown forms alphabetically.
     * The fossil scientist added in Legacy has had his script rewritten, he'll now automatically pick the fossil in your bag that he can revive soonest, and prompt you if (and only if) there's an earlier fossil you're skipping over.
@@ -25,10 +29,9 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysP
 * Continue with text edits. Currently all gym leader fights are complete, along with roughly ¼ of the main story.
 * Give access to all items and decorations locked behind Mystery Gift, Pokémon Stadium/2, and trade of Gen 1 Pokémon (since you can get all 251 Pokémon in Legacy, all items should be available too)
     * ~~ In-game source for all held items~~
-    * Add all decorations to Mom's phone gift table
-    * In-game sources for all types of mail
-    * Maybe: Add renewable sources for silver/gold leaf and set up an NPC to exchange them for evo stones, stat boosting items, or TM's? Maybe Buena?
-* Revert, at least partially, egg hatch time reductions from Legacy (Odd Egg hatches way too fast)
+    * ~~Add all decorations to Mom's phone gift table~~
+    * ~~In-game sources for all types of mail~~
+    * New sources for TM's. Some are too overpowered to be available in marts
 * Battle engine fixes?
 * Slot machine minigame enhancements?
 
@@ -38,8 +41,8 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysP
 3. ~~Violet City, Union Cave, Routes 32, 33~~ ✅
 4. ~~Azalea Town, Ilex Forest~~ ✅
 5. ~~Ruins of Alph~~ ✅
-6. Goldenrod City, Routes 34, 35
-7. ~~National Park~~ & Routes 36, 37
+6. Goldenrod City, ~~Routes 34, 35~~
+7. ~~National Park & Routes 36, 37~~ ✅
 8. Ecruteak City
 9. Olivine City & Routes 38, 39
 10. Cianwood City, Whirl Islands, Route 40, 41
