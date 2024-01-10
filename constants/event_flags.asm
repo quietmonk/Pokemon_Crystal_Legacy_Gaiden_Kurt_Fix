@@ -203,8 +203,7 @@
 	const EVENT_FOREST_IS_RESTLESS
 	const EVENT_ANSWERED_DRAGON_MASTER_QUIZ_WRONG
 	const EVENT_HIDDEN_TWISTEDSPOON
-	const EVENT_HEARD_PHARMACY_EXPLANATION
-; Unused: next 4 events
+; Unused: next 5 events
 
 	const_next 200
 ; Kanto story events
