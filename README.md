@@ -11,7 +11,7 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysP
 * Step counts required to hatch eggs have been adjusted up to roughly 50% of those in Vanilla, Legacy originally had them set to around 30% and even as low as 10% for some species.
 * The following items are now available without use of Mystery Gift, trading from Gen 1, or Pokemon Stadium 2:
     * All held items (see docs/spoiler/HeldItemLocations.txt for list)
-    * All room decorations are now available from Mom, including ones previously unattainable due to bugs in Pokemon Stadium 2
+    * All room decorations are now available from Mom, including ones previously unobtainable due to bugs in Pokemon Stadium 2
     * All mail types can now be purchased in stores, including ones previously tied to the long defunct mobile system
 * A full rework of the Ruins of Alph:
     * The chamber order has been adjusted so that the order players will most likely complete the chambers in will unlock the Unown forms alphabetically.
@@ -28,12 +28,18 @@ This project is a hack of [TheSmithPlays's](https://www.youtube.com/@smithplaysP
 ## To-do:
 * Continue with text edits. Currently all gym leader fights are complete, along with roughly ¼ of the main story.
 * Give access to all items and decorations locked behind Mystery Gift, Pokémon Stadium/2, and trade of Gen 1 Pokémon (since you can get all 251 Pokémon in Legacy, all items should be available too)
-    * ~~ In-game source for all held items~~
+    * ~~In-game source for all held items~~
     * ~~Add all decorations to Mom's phone gift table~~
     * ~~In-game sources for all types of mail~~
     * New sources for TM's. Some are too overpowered to be available in marts
 * Battle engine fixes?
 * Slot machine minigame enhancements?
+    * Make enhancements listed in [Crystal_'s video on the subject](https://www.youtube.com/watch?v=ojq3xqfRF6I)
+    * Fix bugs related to sound playback and payout odds on lucky machines
+    * Add additional lucky machines available at Day and Night (currently only Morning)
+    * Add ^_^ animation when playing machine as in Gen 1
+    * Add hidden coin pickups around the arcade as in Gen 1
+    * Increase payout amounts and decrease prize coin amounts to make obtaining game corner prizes early less of a grind, incentivize playing slots over buying coins
 
 ## Progress:
 1. ~~New Bark Town & Route 29~~ ✅ Done!
