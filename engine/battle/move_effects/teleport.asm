@@ -74,7 +74,7 @@ BattleCommand_Teleport:
 	; b = player level / 4
 	srl b
 	srl b
-	; As written, it makes enemy use of Teleport always succeed if able
+	; If the random number >= player level / 4, Teleport will succeed
 	cp b
 	jr c, .failed
 
